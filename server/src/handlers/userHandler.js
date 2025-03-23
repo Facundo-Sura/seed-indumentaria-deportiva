@@ -3,6 +3,7 @@ const {
   getUserId,
   getUserName,
   postUser,
+  patchUser,
 } = require("../controllers/userController");
 const getUsersHandler = async (req, res) => {
   const { name } = req.query;
@@ -38,13 +39,29 @@ const postUserHandler = (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
-
+//modificacion completa de usuario
 const putUserHandler = (req, res) => {
-  res.status(200).send("Usuario modificado completamente");
+  const {id} = req.params;
+  try {
+    const response = putUser(id);
+    res.status(200).json(response)
+    console.log("Usuario modificado completamente");
+  } catch (error) {
+    res.status(400).json({error: error.message})
+    console.log("Error al modificar el usuario");
+  }
 };
-
+//modificacion parcial de usuario
 const patchUserHandler = (req, res) => {
-  res.status(200).send("Usuario modificado parcialmente");
+  const {id} = req.params;
+  try {
+    const response = patchUser(id);
+    res.status(200).json(response)
+    console.log("Usuario modificado parcialmente");    
+  } catch (error) {
+    res.status(400).json({error: error.message})
+    console.log("Error al modificar parcialmente el usuario");
+  }
 };
 
 const deleteUserHandler = (req, res) => {

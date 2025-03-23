@@ -34,4 +34,50 @@ const postUser = async (name, email, password) => {
   });
 };
 
-module.exports = { getAllUsers, getUserId, getUserName, postUser };
+const putUser = async (id, name, email, password) => {
+  return await User.update(
+    {
+      name,
+      email,
+      password,
+    },
+    {
+      where: {
+        id,
+      },
+    }
+  );
+};
+
+const patchUser = async (id, name, email, password) => {
+  return await User.update(
+    {
+      name,
+      email,
+      password,
+    },
+    {
+      where: {
+        id,
+      },
+    }
+  );
+};
+
+const deleteUser = async (id) => {
+  return await User.destroy({
+    where: {
+      id,
+    },
+  });
+};
+
+module.exports = {
+  getAllUsers,
+  getUserId,
+  getUserName,
+  postUser,
+  putUser,
+  patchUser,
+  deleteUser,
+};

@@ -27,7 +27,7 @@ fs.readdirSync(path.join(__dirname, "/models"))
   });
 
 // Injectamos la conexion (sequelize) a todos los modelos
-//modelDefiners.forEach((model) => model(sequelize));
+modelDefiners.forEach((model) => model(sequelize));
 
 // Capitalizamos los nombres de los modelos ie: product => Product
 const capitalize = (str) => str.replace(/\b\w/g, (char) => char.toUpperCase());
@@ -37,16 +37,16 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
-const { User } = sequelize.models;
+const { User, Order, Product } = sequelize.models;
 
 // Manejo de errores en la conexión
 sequelize
   .authenticate()
   .then(() => {
-    console.log("Conexión a la base de datos establecida con éxito.");
+    console.log("Database synced");
   })
   .catch((err) => {
-    console.error("No se pudo conectar a la base de datos:", err);
+    console.error("Database error:", err);
   });
 
 module.exports = {

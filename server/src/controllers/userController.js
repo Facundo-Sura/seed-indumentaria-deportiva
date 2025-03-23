@@ -1,5 +1,5 @@
-const axios = require("axios");
 const { User } = require("../db");
+const axios = require("axios");
 const URL = "https://fakestoreapi.com/users";
 
 const getAllUsers = async () => {

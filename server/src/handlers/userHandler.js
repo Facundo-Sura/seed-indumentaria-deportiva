@@ -5,6 +5,7 @@ const {
   postUser,
   patchUser,
 } = require("../controllers/userController");
+
 const getUsersHandler = async (req, res) => {
   const { name } = req.query;
   try {

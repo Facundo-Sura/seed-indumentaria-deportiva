@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sección 1: Logo y descripción */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Seed</h3>
+            <h3 className="text-xl font-bold mb-4">SE<span className='text-green-400'>E</span>D - Indumentaria Deportiva</h3>
             <p className="text-gray-400">
               Tu destino para comprar productos de calidad a precios increíbles.
             </p>

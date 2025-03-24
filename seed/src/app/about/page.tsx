@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-blue-600 text-white py-20">
+      <section className="relative bg-green-400 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Sobre Nosotros</h1>
           <p className="text-xl max-w-3xl mx-auto">
@@ -101,7 +101,7 @@ const AboutPage = () => {
                   />
                 </div>
                 <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-blue-600">{member.role}</p>
+                <p className="text-green-400">{member.role}</p>
               </div>
             ))}
           </div>

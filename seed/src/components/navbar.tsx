@@ -7,32 +7,32 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
-            <span className="text-xl font-bold text-gray-800">Seed</span>
+          <Link href="/" className="flex-shrink-0 w-24">
+            <img src="/imagenes/favicon.png" alt="Seed Indumentaria Deportiva" />
           </Link>
 
           {/* Menú principal */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-800 hover:text-blue-600 transition">
+            <Link href="/" className="text-gray-800 hover:text-green-400 transition">
               Inicio
             </Link>
-            <Link href="/products" className="text-gray-800 hover:text-blue-600 transition">
+            <Link href="/products" className="text-gray-800 hover:text-green-400 transition">
               Productos
             </Link>
-            <Link href="/about" className="text-gray-800 hover:text-blue-600 transition">
+            <Link href="/about" className="text-gray-800 hover:text-green-400 transition">
               Nosotros
             </Link>
           </div>
 
           {/* Iconos de acción */}
           <div className="flex items-center space-x-4">
-            <Link href="/search" className="p-2 hover:text-blue-600">
+            <Link href="/search" className="p-2 hover:text-green-400">
               🔍
             </Link>
-            <Link href="/account" className="p-2 hover:text-blue-600">
+            <Link href="/account" className="p-2 hover:text-green-400">
               👤
             </Link>
-            <Link href="/cart" className="p-2 hover:text-blue-600">
+            <Link href="/cart" className="p-2 hover:text-green-400">
               🛒
             </Link>
           </div>

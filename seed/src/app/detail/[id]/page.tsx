@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react"
 import axios from "axios"
-import Image from "next/image";
 import { useParams } from "next/navigation";
 import { StarIcon } from "@heroicons/react/24/solid"
 

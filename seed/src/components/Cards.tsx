@@ -15,7 +15,7 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ products }) => {
     return (
-        <div className="cards-container">
+        <div className='grid grid-cols-4 items-stretch justify-items-center '>
             {products.map((product) => (
                 <Card key={product.id} id={product.id} title={product.title} price={product.price} image={product.image} />
             ))}

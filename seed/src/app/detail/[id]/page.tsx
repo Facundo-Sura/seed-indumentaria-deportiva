@@ -28,7 +28,7 @@ const Detail: React.FC = () => {
             setError(null)
             const response = await axios.get(`http://localhost:5000/products/${id}`);
             setProduct(response.data);
-            console.log(response);
+            console.log(response.data);
         } catch (err) {
             console.error('Error fetching product: ', err);
             setError('Failed to load product details')
@@ -49,7 +49,7 @@ const Detail: React.FC = () => {
     if (loading) {
         return (
             <div className="flex justify-center items-center h-64">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-500"></div>
             </div>
         )
     }
@@ -74,19 +74,19 @@ const Detail: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Imagen del producto */}
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src={product.image} alt={product.title} className="w-full h-auto object-cover"></img>
+                <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-96 max-h-96">
+                    <img src={product.image} alt={product.title} className="w-fit h-fit object-cover"></img>
                 </div>
 
                 {/* Detalles del producto */}
                 <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                        <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                        <span className="bg-green-100 text-green-400 text-xs font-medium px-2.5 py-0.5 rounded">
                             {product.category}
                         </span>
                         <div className="flex items-center">
                             <StarIcon className="w-5 h-5 text-yellow-400" />
-                            <span className="ml-1 text-gray-600">{product.rate}</span>
+                            <span className="ml-1 text-gray-600"><p>{product.rating.rate}</p></span>
                         </div>
                     </div>
 
@@ -97,11 +97,11 @@ const Detail: React.FC = () => {
                     <div className="prose max-w-none text-gray-700">
                         <p>{product.description}</p>
                     </div>
-                    <div>
-                        <button className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
+                    <div className="w-full flex justify-evenly">
+                        <button className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
                             Comprar
                         </button>
-                        <button className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
+                        <button className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
                             Al Carito
                         </button>
                     </div>

@@ -23,7 +23,6 @@ const Home: React.FC = () => {
             const response = await axios.get('http://localhost:5000/products');
             setProducts(response.data);
             console.log(response);
-
         } catch (error) {
             console.error('Error fetching products: ',error);
         }

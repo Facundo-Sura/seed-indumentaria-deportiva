@@ -13,7 +13,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ id, title, price, image }) => {
     return (
         <div className="w-64 m-2 p-0 hover:cursor-pointer hover:bg-zinc-300">
-            <Link href={`/product/${id}`}>
+            <Link href={`/detail/${id}`}>
                 <img src={image} alt={title} className='w-full h-2/3' />
                 <div className='p-2 h-1/3'>
                     <h3 className='my-2 mx-0'>{title}</h3>

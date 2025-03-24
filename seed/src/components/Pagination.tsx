@@ -1,4 +1,3 @@
-// src/components/Pagination.tsx
 import React from 'react';
 import { FaAngleDoubleLeft, FaAngleLeft, FaAngleRight, FaAngleDoubleRight } from 'react-icons/fa';
 
@@ -38,7 +37,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         className={`p-2 rounded-lg ${
           currentPage === 1
             ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-blue-500 text-white hover:bg-blue-600'
+            : 'bg-black text-white hover:bg-slate-600'
         }`}
         aria-label="Ir a la primera página"
       >
@@ -52,7 +51,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         className={`p-2 rounded-lg ${
           currentPage === 1
             ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-blue-500 text-white hover:bg-blue-600'
+            : 'bg-black text-white hover:bg-slate-600'
         }`}
         aria-label="Ir a la página anterior"
       >
@@ -67,8 +66,8 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
           disabled={currentPage === index + 1}
           className={`px-3 py-2 rounded-lg ${
             currentPage === index + 1
-              ? 'bg-black text-white'
-              : 'bg-white text-black hover:bg-slate-100'
+              ? 'bg-white text-black'
+              : 'bg-black text-white hover:bg-slate-600'
           }`}
           aria-label={`Ir a la página ${index + 1}`}
         >

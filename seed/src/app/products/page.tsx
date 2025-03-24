@@ -12,7 +12,7 @@ interface Product {
     image: string;
 }
 
-const Home: React.FC = () => {
+const Products: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]); //defino el estado de los productos
     const [currentPage, setCurrentPage] = useState(1);//defino el estado de la pagina actual
     const [productsPerPage] = useState(10);//defino el estado de la cantidad de productos por pagina
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             setProducts(response.data);
             console.log(response);
         } catch (error) {
-            console.error('Error fetching products: ',error);
+            console.error('Error fetching products: ', error);
         }
     };
 
@@ -51,4 +51,4 @@ const Home: React.FC = () => {
     )
 }
 
-export default Home;
+export default Products;

@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <p className="text-gray-400">contacto@mitienda.com</p>
-            <p className="text-gray-400">+1 234 567 890</p>
+            <p className="text-gray-400">+54 9 3547 523108</p>
           </div>
         </div>
 

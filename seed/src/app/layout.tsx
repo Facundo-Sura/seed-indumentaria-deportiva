@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seed",
-  description: "Indumentria Deportiva",
+  title: "Seed - Indumentaria Deportiva",
+  description: "Indumentria Deportiva, e-commerce o tienda virtual de ropa deportiva",
 };
 
 export default function RootLayout({

@@ -27,33 +27,34 @@ const getProductName = async (name) => {
 const getProductsFilter = async (category, gender, size, rating, min, max) => {
   const products = await getAllProducts();
   let filteredProducts = products;
+
+  if (category) {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.category === category
+    );
+  }
+  if (gender) {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.category === gender
+    );
+    if (size) {
+      filteredProducts = filteredProducts.filter(
+        (product) => product.size === size
+      );
+    }
+    if (rating) {
+      filteredProducts = filteredProducts.filter(
+        (product) => product.rating.rate >= rating
+      );
+    }
+    if (min && max) {
+      filteredProducts = filteredProducts.filter(
+        (product) => product.price >= min && product.price <= max
+      );
+    }
+    return filteredProducts;
+  }
 };
-if (category) {
-  filteredProducts = filteredProducts.filter(
-    (product) => product.category === category
-  );
-}
-if (gender) {
-  filteredProducts = filteredProducts.filter(
-    (product) => product.category === gender
-  );
-  if (size) {
-    filteredProducts = filteredProducts.filter(
-      (product) => product.size === size
-    );
-  }
-  if (rating) {
-    filteredProducts = filteredProducts.filter(
-      (product) => product.rating.rate >= rating
-    );
-  }
-  if (min && max) {
-    filteredProducts = filteredProducts.filter(
-      (product) => product.price >= min && product.price <= max
-    );
-  }
-  return filteredProducts;
-}
 
 const postProduct = async (
   name,

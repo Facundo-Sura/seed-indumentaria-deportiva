@@ -1,0 +1,1912 @@
+{
+    "products": [
+        {
+            "name": "buzo",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/buzo%203%20nike.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "algodon",
+            "season": "invierno",
+            "isOnSale": false,
+            "discountPercentage": 5,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/buzo%20tommy.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul francia"
+            ],
+            "stock": 100,
+            "brand": "tomy",
+            "material": "algodon",
+            "isOnSale": false,
+            "discountPercentage": 5,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/buzo%20nike%20violeta.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "violeta"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "algodon",
+            "isOnSale": false,
+            "discountPercentage": 5,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/buzo%20nike%20purpura.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "purpura"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "algodon",
+            "isOnSale": false,
+            "discountPercentage": 5,
+            "rating": 4.5
+        },
+        {
+            "name": "short",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/short%20under%20armor%20blanco.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "under armor",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 15,
+            "rating": 4.5
+        },
+        {
+            "name": "short",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/short%20under%20armor%20gris.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "gris"
+            ],
+            "stock": 100,
+            "brand": "under armor",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 15,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/IMG-20250318-WA0129.jpg"
+            ],
+            "category": "gimnasio",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "agodon",
+            "isOnSale": false,
+            "discountPercentage": 5,
+            "rating": 4.5
+        },
+        {
+            "name": "short curry",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20curry%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20curry%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "naranja",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short magics",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20magics%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20magic%20tasero.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "blanco",
+                "azul"
+            ],
+            "stock": 100,
+            "brand": "nba",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short jazz",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20jazz%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20jazz%20trasero.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "blanco",
+                "amarillo",
+                "verde"
+            ],
+            "stock": 100,
+            "brand": "nba",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short bocajrs",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20boca%20azul.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20boca%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negra",
+                "azul",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short heat",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20heat%20frente.jpg"
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "celeste",
+                "azul",
+                "blanco",
+                "rosa"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta boca jugador 12",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20rallas%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20rallas%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negra",
+                "azul",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta james cavs",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20cavs%20james%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20cavs%20james%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "marron",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta tatum",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20tatum%20frente.jpg"
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "verde",
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta biggie",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20biggie%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20biggie%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "nba",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta curry",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20curry%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20curry%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "rojo",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta boca jugador12",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul oscuro",
+                "azul",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta james lakers",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20lal%20james%20%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20lal%20james%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta morant",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20morant%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20morant%20espalda.jpg"
+                }
+            ],
+            "category": "basket",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta borja",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20blanca%20borja.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "rojo",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta talleres",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20rayas%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20rayas%20espalda.jpg"
+                }
+            ],
+            "category": "futol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "azul",
+                "rojo"
+            ],
+            "stock": 100,
+            "brand": "le coq sportif",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta advincula",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20blanca%20advincula.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "azul",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta zenon",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20azul%20zenon.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta merentiel",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20blanca%20merentiel.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "azul",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta mastantuono",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20blanca%20mastantuono.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "rojo",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta talleres",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "azul",
+                "rojo"
+            ],
+            "stock": 100,
+            "brand": "le coq sportif",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta ronaldo united",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20united%20rojo%20cr7.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "rojo",
+                "blanco",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "nike",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta cavani",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20%2B%20azul%20cavani.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo",
+                "celeste"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta acuña",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20bordo%20acu%C3%B1a.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "bordo",
+                "blanco",
+                "rojo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta belgrano negra",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20negro%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20negro%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negra",
+                "celeste",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "umbro",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta belgrano celeste",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20celeste%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "celeste",
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "errea",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta advincula",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20azul%20advincula.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta borja",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20negro%20borja.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "rojo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta messi azul",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%20azul%20messi%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "celeste",
+                "blanco",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta ronaldinho milan",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20milan%20rayas%20negro%20rojo%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20milan%20negra%20roja%20rayas%20ronaldinho.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "rojo",
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta seleccion argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%20azul%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta messi",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%20blanco%20messi%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "camiseta seleccion argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%202%20estrellas%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short river",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/shor%20river%20negro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "rojo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20boca%20azul%20adidas%20blanco%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20boca%20azul%20adidas%20amarillo.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short river",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20river%20negro%20adidas%20blanco.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "blanco",
+                "rojo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short inter miami",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20inter%20miami%20rosa%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "rosa",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20blanco%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short chacarita",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20blanco%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20chacarita%20negro%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "rojo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "stela artois",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short talleres",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20talleres%20blanco.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20talleres%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "blanco",
+                "azul"
+            ],
+            "stock": 100,
+            "brand": "le coq sportif",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "short argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20negro.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20negro%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "polyester",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20celeste.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "celeste",
+                "blanco",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin river",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20river%20negro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "rojo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "campera argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20azul.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "celeste"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20negro%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20negro%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "blanco",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20dorado.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "dorado",
+                "celeste",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin inter miami",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20omter%20miami%20negro%20frente.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "campera argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20dorado.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "dorado",
+                "celeste",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo talleres",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20talleres.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "bordo",
+                "azul",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "le coq sportif",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20boca%20azul%20oscuro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "azul claro",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20boca%20azul.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20boca%20azul%20claro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul claro",
+                "azul",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "conjunto river",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/conjunto%20river%20rojo.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "rojo",
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20argentina%20negro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "campera argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20dorado.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "dorado",
+                "celeste",
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "conjunto boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/conjunto%20boca%20azul.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "azul",
+                "amarillo"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "campera argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20negro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo river",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20river%20negro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "rojo",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20argentina%20negro.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "celeste",
+                "dorado"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "joggin talleres",
+            "price": 3000,
+            "description": "",
+            "image": [
+                {
+                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20talleres%20negro%20frente.jpg",
+                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20talleres%20negro%20espalda.jpg"
+                }
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "negro",
+                "blanco"
+            ],
+            "stock": 100,
+            "brand": "le coq sportif",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "conjunto boca",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/conjunto%20boca%20amarillo.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "amarillo",
+                "azul"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "buzo argentina",
+            "price": 3000,
+            "description": "",
+            "image": [
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20dorado.jpg"
+            ],
+            "category": "futbol",
+            "gender": "unisex",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "dorado",
+                "celeste",
+                "negro"
+            ],
+            "stock": 100,
+            "brand": "adidas",
+            "material": "algodon",
+            "isOnSale": true,
+            "discountPercentage": 10,
+            "rating": 4.5
+        }
+    ]
+}

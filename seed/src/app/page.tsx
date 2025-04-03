@@ -103,7 +103,7 @@ export default function Home() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/videos/running.mp4" type="video/mp4" />
+            <source src="/videos/gimnasio.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center px-8 md:px-16 lg:px-32">
             <div className="max-w-2xl">

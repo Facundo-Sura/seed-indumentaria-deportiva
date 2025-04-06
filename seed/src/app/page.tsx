@@ -112,7 +112,7 @@ export default function Home() {
                 Todo lo que necesitas para correr más lejos y más rápido
               </p>
               <Link 
-                href="/products/running" 
+                href="/products/gym" 
                 className="inline-block bg-white text-black px-8 py-3 rounded-full font-bold 
                 hover:bg-black hover:text-white transition-all duration-300 hover:scale-105"
               >

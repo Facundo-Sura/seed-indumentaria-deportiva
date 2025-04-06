@@ -184,10 +184,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20curry%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20curry%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20curry%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -214,10 +211,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20magics%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20magic%20tasero.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20magics%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -244,10 +238,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20jazz%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20jazz%20trasero.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20jazz%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -274,11 +265,7 @@
             "name": "short bocajrs",
             "price": 3000,
             "description": "",
-            "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20boca%20azul.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20boca%20espalda.jpg"
-                }
+            "image": ["https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20boca%20azul.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -334,10 +321,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20rallas%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20rallas%20espalda.jpg"
-                }
+                    "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20rallas%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -365,10 +349,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20cavs%20james%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20cavs%20james%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20cavs%20james%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -422,10 +403,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20biggie%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20biggie%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20biggie%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -450,10 +428,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20curry%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20curry%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20curry%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -481,10 +456,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -512,10 +484,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20lal%20james%20%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20lal%20james%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20lal%20james%20%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -541,10 +510,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20morant%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20morant%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20morant%20frente.jpg"
             ],
             "category": "basket",
             "gender": "unisex",
@@ -597,10 +563,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20rayas%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20rayas%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20rayas%20frente.jpg"
             ],
             "category": "futol",
             "gender": "unisex",
@@ -735,10 +698,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20frente.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -846,10 +806,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20negro%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20negro%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20negro%20frente.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -985,10 +942,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20milan%20rayas%20negro%20rojo%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20milan%20negra%20roja%20rayas%20ronaldinho.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20milan%20rayas%20negro%20rojo%20frente.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -1255,10 +1209,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20blanco%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20chacarita%20negro%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20blanco%20frente.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -1285,10 +1236,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20talleres%20blanco.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20talleres%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20talleres%20blanco.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -1314,10 +1262,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20negro.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20negro%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20negro.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -1424,10 +1369,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20negro%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20negro%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20negro%20frente.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",
@@ -1831,10 +1773,7 @@
             "price": 3000,
             "description": "",
             "image": [
-                {
-                    "frente": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20talleres%20negro%20frente.jpg",
-                    "espalda": "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20talleres%20negro%20espalda.jpg"
-                }
+                "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20talleres%20negro%20frente.jpg"
             ],
             "category": "futbol",
             "gender": "unisex",

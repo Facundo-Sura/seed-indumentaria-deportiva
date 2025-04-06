@@ -52,4 +52,5 @@ sequelize
 module.exports = {
   ...sequelize.models,
   conn: sequelize,
+  sequelize
 };

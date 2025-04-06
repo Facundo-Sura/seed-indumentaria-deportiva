@@ -10,7 +10,7 @@ interface Product {
     image: string;
 }
 
-const Basquetball: React.FC = () => {
+const Gym: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]); //defino el estado de los productos
     const [currentPage, setCurrentPage] = useState(1);//defino el estado de la pagina actual
     const [productsPerPage] = useState(9);//defino el estado de la cantidad de productos por pagina
@@ -18,7 +18,7 @@ const Basquetball: React.FC = () => {
     //Funcion para obrener los productos
     const fetchProducts = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/products?category=basket');
+            const response = await axios.get('http://localhost:5000/products?category=gimnasio');
             setProducts(response.data);
             console.log(response);
         } catch (error) {
@@ -40,4 +40,4 @@ const Basquetball: React.FC = () => {
     )
 }
 
-export default Basquetball;
+export default Gym;

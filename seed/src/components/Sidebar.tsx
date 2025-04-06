@@ -56,7 +56,7 @@ const Sidebar = ({ onFilterChange }: SidebarProps) => {
     };
 
     return (
-        <div className="relative">
+        <div className="relative col-span-1">
             {/* Botón para móvil */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -167,7 +167,7 @@ const FilterSection = ({ title, items, activeItems, onToggle }: FilterSectionPro
     const [isExpanded, setIsExpanded] = useState(true);
 
     return (
-        <div>
+        <div className='relative'>
             <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="flex items-center justify-between w-full font-semibold mb-2"

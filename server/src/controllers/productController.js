@@ -1,26 +1,24 @@
 const { Product } = require("../db");
 const { Op, where } = require("sequelize");
-const axios = require("axios");
-const URL = "https://fakestoreapi.com/products";
 
 const getAllProducts = async () => {
-  // productos de la api fake store
-  const response = await axios.get(URL);
-  const products = response.data;
+  const products = await Product.findAll({});
   return products;
 };
 
 const getProductId = async (id) => {
-  // producto por id de la api fake store
-  const product = (await axios.get(`${URL}/${id}`)).data;
+  const product = await Product.findByPk(id);
   return product;
 };
 
 const getProductName = async (name) => {
-  // producto por nnpmbre de la api fake store
-  const product = (await axios.get(`${URL}`)).data.filter(
-    (product) => product.title === name
-  );
+  const product = await Product.findAll({
+    where: {
+      name: {
+        [Op.iLike]: `%${name}%`,
+      },
+    },
+  });
   return product;
 };
 
@@ -29,9 +27,15 @@ const getProductsFilter = async (category, gender, size, rating, min, max) => {
   let filteredProducts = products;
 
   if (category) {
-    filteredProducts = filteredProducts.filter(
-      (product) => product.category === category
-    );
+    filteredProducts = await Product.findAll({
+      where: {
+        category: {
+          [Op.iLike]: `%${category}%`,
+        },
+      },
+    });
+    console.log(filteredProducts);
+    return filteredProducts;
   }
   if (gender) {
     filteredProducts = filteredProducts.filter(

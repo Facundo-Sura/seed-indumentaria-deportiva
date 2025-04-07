@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import PayButton from './PayButton';
 
 //Definimos la interfaz para las props del componente
 interface CardProps {
@@ -19,7 +20,7 @@ const Card: React.FC<CardProps> = ({ id, name, price, image }) => {
                     <h3 className='my-2 mx-0'>{name}</h3>
                     <p className='text-gray-500'>${price}</p>
                     <div className='grid grid-cols-2 items-center justify-items-center'>
-                        <button className='w-fit p-2 rounded-2xl hover:bg-black hover:text-white hover:cursor-pointer'>Comprar</button>
+                        <PayButton cartProducts={[{ id, name, price, image }]} totalPrice={price} />
                         <button className='w-fit p-2 rounded-2xl hover:bg-black hover:text-white hover:cursor-pointer'>Al carrito</button>
                     </div>
                 </div>

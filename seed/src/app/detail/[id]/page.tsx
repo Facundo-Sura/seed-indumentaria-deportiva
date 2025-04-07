@@ -3,12 +3,13 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import { useParams } from "next/navigation";
 import { StarIcon } from "@heroicons/react/24/solid"
+import Paybutton from "@/components/PayButton"
 
 interface Product {
-    id: number;
+    id: string;
     image: string;
-    title: string;
-    rate: number;
+    name: string;
+    rating: number;
     category: string;
     description: string;
     price: number;
@@ -16,13 +17,13 @@ interface Product {
 
 const Detail: React.FC = () => {
     const params = useParams()
-    const id = params.id ? Number(params.id) : null
+    const id = params.id ? String(params.id) : null
 
     const [product, setProduct] = useState<Product | null>(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
 
-    const fetchProduct = async (id: number) => {
+    const fetchProduct = async (id: string) => {
         try {
             setLoading(true)
             setError(null)
@@ -75,7 +76,7 @@ const Detail: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Imagen del producto */}
                 <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-96 max-h-96">
-                    <img src={product.image} alt={product.title} className="w-fit h-fit object-cover"></img>
+                    <img src={product.image} alt={product.name} className="w-fit h-fit object-cover"></img>
                 </div>
 
                 {/* Detalles del producto */}
@@ -86,11 +87,11 @@ const Detail: React.FC = () => {
                         </span>
                         <div className="flex items-center">
                             <StarIcon className="w-5 h-5 text-yellow-400" />
-                            <span className="ml-1 text-gray-600"><p>{product.rating.rate}</p></span>
+                            <span className="ml-1 text-gray-600"><p>{product.rating}</p></span>
                         </div>
                     </div>
 
-                    <h1 className="text-3xl font-bold text-gray-900">{product.title}</h1>
+                    <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
 
                     <p className="text-2xl font-semibold text-gray-900">${product.price.toFixed(2)}</p>
 
@@ -98,9 +99,7 @@ const Detail: React.FC = () => {
                         <p>{product.description}</p>
                     </div>
                     <div className="w-full flex justify-evenly">
-                        <button className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
-                            Comprar
-                        </button>
+                        <Paybutton cartProducts={[product]} totalPrice={product.price} />
                         <button className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
                             Al Carito
                         </button>

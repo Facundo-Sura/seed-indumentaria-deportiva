@@ -8,6 +8,7 @@ const getAllProducts = async () => {
 
 const getProductId = async (id) => {
   const product = await Product.findByPk(id);
+  console.log(product);
   return product;
 };
 
@@ -34,32 +35,46 @@ const getProductsFilter = async (category, gender, size, rating, min, max) => {
         },
       },
     });
-    console.log(filteredProducts);
-    return filteredProducts;
   }
-  if (gender) {
-    filteredProducts = filteredProducts.filter(
-      (product) => product.category === gender
-    );
-    if (size) {
-      filteredProducts = filteredProducts.filter(
-        (product) => product.size === size
-      );
-    }
-    if (rating) {
-      filteredProducts = filteredProducts.filter(
-        (product) => product.rating.rate >= rating
-      );
-    }
-    if (min && max) {
-      filteredProducts = filteredProducts.filter(
-        (product) => product.price >= min && product.price <= max
-      );
-    }
-    return filteredProducts;
-  }
-};
 
+  if (gender) {
+    filteredProducts = await Product.findAll({
+      where: {
+        gender: {
+          [Op.iLike]: `%${gender}%`,
+        },
+      },
+    });
+  }
+
+  if (size) {
+    filteredProducts = await Product.findAll({
+      where: {
+        size: {
+          [Op.iLike]: `%${size}%`,
+        },
+      },
+    });
+  }
+
+  if (rating) {
+    filteredProducts = await Product.findAll({
+      where: {
+        rating: {
+          [Op.gte]: rating,
+        },
+      },
+    });
+  }
+
+  if (min && max) {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.price >= min && product.price <= max
+    );
+  }
+  console.log(filteredProducts);
+    return filteredProducts;
+};
 const postProduct = async (
   name,
   price,

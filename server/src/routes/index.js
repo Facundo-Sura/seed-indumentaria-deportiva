@@ -5,10 +5,12 @@ const router = Router();
 const usersRouter = require("./userRouter");
 const productRouter = require("./productRouter");
 const orderRouter = require("./orderRouter");
+const payRouter = require("./payRouter");
 
 router.use("/users", usersRouter);
 router.use("/products", productRouter);
 router.use("/order", orderRouter);
+router.use("/pay", payRouter);
 
 router.use("*", (req, res, next) => {
     return res.status(404).json({

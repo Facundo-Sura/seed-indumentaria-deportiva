@@ -6,13 +6,17 @@ const usersRouter = require("./userRouter");
 const productRouter = require("./productRouter");
 const orderRouter = require("./orderRouter");
 const payRouter = require("./payRouter");
+const cartRouter = require("./cartRouter");
+const questionRouter = require("./questionRouter");
+const reviewRouter = require("./reviewRouter");
 
 router.use("/users", usersRouter);
 router.use("/products", productRouter);
 router.use("/order", orderRouter);
 router.use("/pay", payRouter);
-// router.use("/questions")
-// router.use("/reviews")
+router.use("/cart", cartRouter);
+router.use("/questions", questionRouter)
+router.use("/reviews", reviewRouter)
 
 router.use("*", (req, res, next) => {
     return res.status(404).json({

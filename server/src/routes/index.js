@@ -11,6 +11,8 @@ router.use("/users", usersRouter);
 router.use("/products", productRouter);
 router.use("/order", orderRouter);
 router.use("/pay", payRouter);
+// router.use("/questions")
+// router.use("/reviews")
 
 router.use("*", (req, res, next) => {
     return res.status(404).json({

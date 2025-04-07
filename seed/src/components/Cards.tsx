@@ -3,8 +3,8 @@ import Card from "./Card";
 
 //Defino la interfaz para las props del componente
 interface Product {
-    id: number;
-    title: string;
+    id: string;
+    name: string;
     price: number;
     image: string;
 }
@@ -15,9 +15,9 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ products }) => {
     return (
-        <div className="cards-container">
+        <div className='grid grid-cols-3 items-stretch justify-items-center '>
             {products.map((product) => (
-                <Card key={product.id} id={product.id} title={product.title} price={product.price} image={product.image} />
+                <Card key={product.id} id={product.id} name={product.name} price={product.price} image={product.image} />
             ))}
         </div>
     );

@@ -1,49 +1,26 @@
-const { DataTypes } = require("sequelize");
+const {DataTypes} = require('sequelize');
 module.exports = (sequelize) => {
-   sequelize.define("Order", {
-    id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
-      primaryKey: true,
-      allowNull: false,
-    },
-    total: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-      validate: {
-        min: 0, // El total no puede ser negativo
+    sequelize.define('Order', {
+      quantity: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 1
       },
-    },
-    status: {
-      type: DataTypes.ENUM("pending", "completed", "cancelled"),
-      defaultValue: "pending",
-      allowNull: false,
-    },
-    paymentMethod: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    shippingAddress: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    userId: {
-      type: DataTypes.UUID,
-      allowNull: false,
-      references: {
-        model: "Users", // Nombre de la tabla de usuarios
-        key: "id",
+      size: {
+        type: DataTypes.STRING, // o ENUM con tallas disponibles
+        allowNull: false
       },
-    },
-    createdAt: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
-      allowNull: false,
-    },
-    updatedAt: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
-      allowNull: false,
-    },
-  });
-};
+      priceAtPurchase: { // Guarda el precio en el momento de la compra
+        type: DataTypes.FLOAT,
+        allowNull: false
+      },
+      status: {
+        type: DataTypes.ENUM('pending', 'completed', 'shipped', 'cancelled'),
+        defaultValue: 'pending'
+      },
+      purchaseDate: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+      }
+    });
+  };

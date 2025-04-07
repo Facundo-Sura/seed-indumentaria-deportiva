@@ -1,46 +1,70 @@
-"use client";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { loadStripe } from "@stripe/stripe-js";
+import React from 'react';
+import { loadStripe, Stripe } from '@stripe/stripe-js';
+import { Elements, useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 
-const stripePromise = loadStripe("pk_test_51RB2AoGhMCA6aaHXAEqMcQiLfpRRrxATrvgMjdu9QCS4MMpfbjAUP2AId0EdKuQoaxIVZ5C9s6FLkiEQ7qNvchtt00PKjlhaA7");
+// Configuración de la clave pública de Stripe
+const stripePromise: Promise<Stripe | null> = loadStripe("pk_test_51PVx00CRx9u6cZBxtTBfWTyf5b5VfJdwTub8aoRbb2N7OqwZTxr33aPgL0B8kvAhy475sF3lGhtjFsaJGzbfhhUP00yzZChe7p");
 
-interface PayButtonProps {
-  cartProducts: any[];
-  totalPrice: number;
+interface Product {
+    id: string;
+    name: string;
+    price: number;
 }
 
-const ButtonPay = ({ cartProducts, totalPrice }: PayButtonProps) => {
-  const handleCheckout = async () => {
-    try {
-      const response = await axios.post("http://localhost:5000/pay/", {
-        cartProducts,
-        totalPrice,
-      });
+interface StripeCheckoutProps {
+    product: Product;
+}
 
-      const { sessionId } = response.data;
-      const stripe = await stripePromise;
-      if (stripe) {
-        const { error } = await stripe.redirectToCheckout({ sessionId });
-        if (error) {
-          console.error("Error in redirecting to checkout:", error);
-        } else {
-          const clearCart = await axios.delete("http://localhost:5000/order/deleteAll")
+const CheckoutForm: React.FC<StripeCheckoutProps> = ({ product }) => {
+    const stripe = useStripe();
+    const elements = useElements();
+
+    const handleClick = async () => {
+        if (!stripe) return;
+
+        try {
+            const response = await fetch('http://localhost:5000/create-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    productId: product.id,
+                    amount: product.price,
+                }),
+            });
+
+            const session = await response.json();
+
+            if (!session || !session.id) {
+                throw new Error('No se pudo iniciar la sesión de pago.');
+            }
+
+            const result = await stripe.redirectToCheckout({
+                sessionId: session.id,
+            });
+
+            if (result.error) {
+                console.error(result.error.message);
+            }
+        } catch (error) {
+            console.error('Error al iniciar la sesión de pago:', error);
         }
-      }
-    } catch (error) {
-      console.error("Error in handleCheckout:", error);
-    }
-  };
+    };
 
-  return (
-    <button
-      onClick={handleCheckout}
-      className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200"
-    >
-      Comprar
-    </button>
-  );
+    return (
+        <div>
+            <button onClick={handleClick} className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200 cursor-pointer">Comprar</button>
+        </div>
+    );
 };
 
-export default ButtonPay;
+const StripeCheckout: React.FC<StripeCheckoutProps> = ({ product }) => {
+    return (
+        <Elements stripe={stripePromise}>
+            <CheckoutForm product={product} />
+        </Elements>
+    );
+};
+
+export default StripeCheckout;

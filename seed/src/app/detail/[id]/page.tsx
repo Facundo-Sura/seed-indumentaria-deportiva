@@ -99,10 +99,10 @@ const Detail: React.FC = () => {
                         <p>{product.description}</p>
                     </div>
                     <div className="w-full flex justify-evenly">
-                        <Paybutton cartProducts={[product]} totalPrice={product.price} />
                         <button className="w-full md:w-auto bg-green-400 hover:bg-green-800 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
                             Al Carito
                         </button>
+                        <Paybutton product={product} />
                     </div>
                 </div>
             </div>

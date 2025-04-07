@@ -14,17 +14,17 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ id, name, price, image }) => {
     return (
         <div className="w-64 m-2 p-0 hover:cursor-pointer hover:bg-zinc-300">
-            <Link href={`/detail/${id}`}>
-                <img src={image} alt={name} className='w-full h-2/3' />
-                <div className='p-2 h-1/3'>
-                    <h3 className='my-2 mx-0'>{name}</h3>
-                    <p className='text-gray-500'>${price}</p>
-                    <div className='grid grid-cols-2 items-center justify-items-center'>
-                        <PayButton cartProducts={[{ id, name, price, image }]} totalPrice={price} />
-                        <button className='w-fit p-2 rounded-2xl hover:bg-black hover:text-white hover:cursor-pointer'>Al carrito</button>
-                    </div>
+
+            <img src={image} alt={name} className='w-full h-2/3' />
+            <div className='p-2 h-1/3'>
+                <h3 className='my-2 mx-0'>{name}</h3>
+                <p className='text-gray-500'>${price}</p>
+                <div className='grid grid-cols-2 items-center justify-items-center'>
+                    <Link href={`/detail/${id}`}>
+                        Ver mas
+                    </Link>
                 </div>
-            </Link>
+            </div>
         </div>
     );
 };

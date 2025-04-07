@@ -4,13 +4,14 @@ import PayButton from './PayButton';
 
 //Definimos la interfaz para las props del componente
 interface CardProps {
-    id: number;
+    id: string;
     name: string;
     price: number;
     image: string;
 }
 
 //Definimos el componente Card
+
 const Card: React.FC<CardProps> = ({ id, name, price, image }) => {
     return (
         <div className="w-64 m-2 p-0 hover:cursor-pointer hover:bg-zinc-300">

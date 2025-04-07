@@ -3,7 +3,7 @@ import Card from "./Card";
 
 //Defino la interfaz para las props del componente
 interface Product {
-    id: number;
+    id: string;
     name: string;
     price: number;
     image: string;

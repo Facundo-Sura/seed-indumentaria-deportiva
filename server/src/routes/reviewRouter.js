@@ -7,3 +7,5 @@ router.post('/'); // Create a new review
 router.put('/'); // Update a review
 router.patch('/'); // Partially update a review
 router.delete('/'); // Delete a review
+
+module.exports = router;

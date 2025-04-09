@@ -10,27 +10,42 @@ const getAllUsers = async () => {
 };
 
 const getUserId = async (id) => {
-  const user = (await axios.get(`${URL}/${id}`)).data;
-  return user;
+  // const user = await User.findByPk(id); //=> usuario de la base de datos con ese id;
+  const  user = await axios.get(`${URL}/${id}`);
+  return user.data;
 };
 
 const getUserName = async (name) => {
   const user = (await axios.get(`${URL}`)).data.filter(
     (user) => user.username === name
   );
-  // const userDb = await User.findAll({
-  //   where: {
-  //     name: name,
-  //   },
-  // });//=> usuario de la base de datos con ese nombre
+
+  if (!user) {
+    const user = await User.findAll({
+      where: {
+        name: name,
+      },
+    });//=> usuario de la base de datos con ese nombre;
+}
   return user;
 };
 
-const postUser = async (name, email, password) => {
+const postUser = async (email, name, password) => {
+  return await User.create({
+    email,
+    name,
+    password,
+  });
+};
+
+const postAdmin = async (name, email, password, role, phone, image) => {
   return await User.create({
     name,
     email,
     password,
+    role,
+    phone,
+    image
   });
 };
 
@@ -77,7 +92,8 @@ module.exports = {
   getUserId,
   getUserName,
   postUser,
+  postAdmin,
   putUser,
   patchUser,
   deleteUser,
-};
+}

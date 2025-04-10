@@ -24,57 +24,53 @@ const getProductName = async (name) => {
 };
 
 const getProductsFilter = async (category, gender, size, rating, min, max) => {
-  const products = await getAllProducts();
-  let filteredProducts = products;
+  const whereClause = {};
 
   if (category) {
-    filteredProducts = await Product.findAll({
-      where: {
-        category: {
-          [Op.iLike]: `%${category}%`,
-        },
-      },
-    });
+    whereClause.category = {
+      [Op.iLike]: `%${category}%`,
+    };
   }
 
   if (gender) {
-    filteredProducts = await Product.findAll({
-      where: {
-        gender: {
-          [Op.iLike]: `%${gender}%`,
-        },
-      },
-    });
+    whereClause.gender = {
+      [Op.iLike]: `%${gender}%`,
+    };
   }
 
   if (size) {
-    filteredProducts = await Product.findAll({
-      where: {
-        size: {
-          [Op.iLike]: `%${size}%`,
-        },
-      },
-    });
+    whereClause.size = {
+      [Op.iLike]: `%${size}%`,
+    };
   }
 
   if (rating) {
-    filteredProducts = await Product.findAll({
-      where: {
-        rating: {
-          [Op.gte]: rating,
-        },
-      },
-    });
+    whereClause.rating = {
+      [Op.gte]: rating,
+    };
   }
 
   if (min && max) {
-    filteredProducts = filteredProducts.filter(
-      (product) => product.price >= min && product.price <= max
-    );
+    whereClause.price = {
+      [Op.between]: [min, max],
+    };
+  } else if (min) {
+    whereClause.price = {
+      [Op.gte]: min,
+    };
+  } else if (max) {
+    whereClause.price = {
+      [Op.lte]: max,
+    };
   }
-  console.log(filteredProducts);
-    return filteredProducts;
+
+  const filteredProducts = await Product.findAll({
+    where: whereClause,
+  });
+
+  return filteredProducts;
 };
+
 const postProduct = async (
   name,
   price,

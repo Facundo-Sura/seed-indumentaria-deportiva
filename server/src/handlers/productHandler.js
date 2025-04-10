@@ -14,7 +14,7 @@ const getProductHandler = async (req, res) => {
   try {
     if (name) {
       const response = await getProductName(name);
-      res.status(200).json(response);
+      return res.status(200).json(response);
     }
     if (category || gender || size || rating || min || max) {
       const response = await getProductsFilter(
@@ -25,10 +25,10 @@ const getProductHandler = async (req, res) => {
         min,
         max
       );
-      res.status(200).json(response);
+      return res.status(200).json(response);
     } else {
       const response = await getAllProducts();
-      res.status(200).json(response);
+      return res.status(200).json(response);
     }
   } catch (error) {
     res.status(400).json({ error: error.message });

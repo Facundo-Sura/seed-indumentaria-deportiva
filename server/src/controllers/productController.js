@@ -23,7 +23,15 @@ const getProductName = async (name) => {
   return product;
 };
 
-const getProductsFilter = async (category, gender, size, rating, min, max) => {
+const getProductsFilter = async (
+  category,
+  gender,
+  color,
+  size,
+  rating,
+  min,
+  max
+) => {
   const whereClause = {};
 
   if (category) {
@@ -38,9 +46,17 @@ const getProductsFilter = async (category, gender, size, rating, min, max) => {
     };
   }
 
+  if (color) {
+    const searchColor = color.toLowerCase();
+    whereClause.color = {
+      [Op.contains]: [searchColor]
+    };
+  }
+
   if (size) {
+    const searchSize = size.toUpperCase();
     whereClause.size = {
-      [Op.iLike]: `%${size}%`,
+      [Op.contains]: [searchSize] // Busca si el array contiene el tamaño especificado,
     };
   }
 

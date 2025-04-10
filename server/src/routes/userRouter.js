@@ -6,6 +6,7 @@ const {
   getUsersHandler,
   getDetailHandler,
   postUserHandler,
+  postAdminHandler,
   putUserHandler,
   patchUserHandler,
   deleteUserHandler
@@ -15,6 +16,7 @@ router.get("/", getUsersHandler);
 router.get("/:id", getDetailHandler);
 router.get("/name", getUsersHandler);
 router.post("/post/", postUserHandler);
+router.post("/post/admin", postAdminHandler);
 router.put("/put/:id", putUserHandler);
 router.patch("/patch/:id", patchUserHandler);
 // router.delete("/:id", deleteUserHandler);

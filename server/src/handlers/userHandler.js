@@ -3,6 +3,8 @@ const {
   getUserId,
   getUserName,
   postUser,
+  postAdmin,
+  putUser,
   patchUser,
 } = require("../controllers/userController");
 
@@ -10,7 +12,6 @@ const getUsersHandler = async (req, res) => {
   const { name } = req.query;
   try {
     if (name) {
-      // const userByName = await getUserName(name);
       res.status(200).json(await getUserName(name));
     } else {
       const response = await getAllUsers();
@@ -31,15 +32,33 @@ const getDetailHandler = async (req, res) => {
   }
 };
 
-const postUserHandler = (req, res) => {
+const postUserHandler = async (req, res) => {
   const { name, email, password } = req.body;
   try {
-    const response = postUser(name, email, password);
+    const response = await postUser(name, email, password);
     res.status(200).json(response);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 };
+
+const postAdminHandler = async (req, res) => {
+  const { name, email, password, role, phone, image } = req.body;
+  try {
+    const response = await postAdmin(
+      name,
+      email,
+      password,
+      role,
+      phone,
+      image
+    ); 
+    console.log(response);
+    return res.status(200).json(response);
+  } catch (error) {
+    res.status(400).json({error: error.message}) 
+  } 
+}
 //modificacion completa de usuario
 const putUserHandler = (req, res) => {
   const {id} = req.params;
@@ -73,6 +92,7 @@ module.exports = {
   getUsersHandler,
   getDetailHandler,
   postUserHandler,
+  postAdminHandler,
   putUserHandler,
   patchUserHandler,
   deleteUserHandler,

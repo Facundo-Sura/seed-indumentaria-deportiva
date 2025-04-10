@@ -4,10 +4,11 @@ const { conn } = require("./src/db");
 
 const PORT = process.env.PORT || 5000;
 
-const server = app.listen(PORT, () => {
-  conn.sync({ force: false });
-  console.log(`Server is running on port ${PORT}`);
-});
+// Ejecuta la inicialización solo si se pasa el argumento --initialize
+  const server = app.listen(PORT, () => {
+    conn.sync({ force: false }); // No usar force en producción
+    console.log(`Server is running on port ${PORT}`);
+  });
 
 //manejo de errores del servidor
 server.on("error", (error) => {

@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 w-24">
-            <img src="/imagenes/favicon.png" alt="Seed Indumentaria Deportiva" />
+            <img src="/imagenes/logo.png" alt="Seed Indumentaria Deportiva" />
           </Link>
 
           {/* Menú principal */}

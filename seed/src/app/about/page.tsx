@@ -1,4 +1,3 @@
-// app/about/page.tsx
 import React from 'react';
 import Image from 'next/image';
 
@@ -37,7 +36,7 @@ const AboutPage = () => {
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/about-team.jpg" // Reemplaza con tu imagen
+                src="/imagenes/about-team.webp"
                 alt="Nuestro equipo"
                 fill
                 className="object-cover"
@@ -86,9 +85,9 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Conoce al Equipo</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
-              { name: "María García", role: "Fundadora", image: "/team1.jpg" },
-              { name: "Carlos López", role: "Director Comercial", image: "/team2.jpg" },
-              { name: "Ana Martínez", role: "Servicio al Cliente", image: "/team3.jpg" }
+              { name: "María García", role: "Fundadora", image: "/imagenes/team1.png" },
+              { name: "Carlos López", role: "Director Comercial", image: "/imagenes/team2.png" },
+              { name: "Ana Martínez", role: "Servicio al Cliente", image: "/imagenes/team3.jpg" }
             ].map((member, index) => (
               <div key={index} className="text-center">
                 <div className="relative h-64 w-64 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">

@@ -7,7 +7,7 @@ import Pagination from "@/components/Pagination";
 
 //defino la interfaz para los producos
 interface Product {
-    id: number;
+    id: string;
     name: string;
     price: number;
     image: string;
@@ -17,7 +17,6 @@ const Products: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]); //defino el estado de los productos
     const [currentPage, setCurrentPage] = useState(1);//defino el estado de la pagina actual
     const [productsPerPage] = useState(9);//defino el estado de la cantidad de productos por pagina
-    const [filters, setFilters] = useState({});//defino el estado de los filtros
 
     //Funcion para obrener los productos
     const fetchProducts = async () => {
@@ -45,8 +44,9 @@ const Products: React.FC = () => {
     const handlePageChange = (page: number) => setCurrentPage(page);
 
     return (
-        <div className="grid grid-cols-6 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <main className="col-span-5">
+        <div className="grid grid-cols-4 items-center grid-rows-1 justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+            <Sidebar />
+            <main className="col-span-3">
             <Cards products={currentProducts} />
             <Pagination currentPage={currentPage} totalPages={Math.ceil(products.length / productsPerPage)} onPageChange={handlePageChange} />
             </main>

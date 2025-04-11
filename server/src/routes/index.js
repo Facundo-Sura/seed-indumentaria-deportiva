@@ -19,10 +19,15 @@ router.use("/products", productRouter);
 // router.use("/reviews", reviewRouter)
 
 router.use("*", (req, res, next) => {
-    return res.status(404).json({
-      status: 404,
-      message: `Can't find ${req.originalUrl} on this server!`,
-    });
+  return res.status(404).json({
+    status: 404,
+    message: `Can't find ${req.originalUrl} on this server!`,
   });
+});
+
+router.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: "Something broke!" });
+});
 
 module.exports = router;

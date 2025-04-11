@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import PayButton from './PayButton';
 
 //Definimos la interfaz para las props del componente
 interface CardProps {

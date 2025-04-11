@@ -10,28 +10,41 @@ const {
 } = require("../controllers/productController");
 
 const getProductHandler = async (req, res) => {
-  const { name, category, gender, size, rating, min, max } = req.query;
+  const { name } = req.query;
+
   try {
     if (name) {
       const response = await getProductName(name);
-      res.status(200).json(response);
-    }
-    if (category || gender || size || rating || min || max) {
-      const response = await getProductsFilter(
-        category,
-        gender,
-        size,
-        rating,
-        min,
-        max
-      );
-      res.status(200).json(response);
+      return res.status(200).json(response);
     } else {
       const response = await getAllProducts();
-      res.status(200).json(response);
+      return res.status(200).json(response);
     }
   } catch (error) {
     res.status(400).json({ error: error.message });
+  }
+};
+
+const getFilterHandler = async (req, res) => {
+  const { category, gender, color, size, rating, min, max } = req.query;
+  
+  try {
+    if (!category && !gender && !color && !size && !rating && !min && !max) {
+      return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
+    }
+
+    const response = await getProductsFilter(
+      category,
+      gender,
+      color,
+      size,
+      rating,
+      min,
+      max
+    );
+    return res.status(200).json(response);
+  } catch (error) {
+    return res.status(400).json({ error: error.message });
   }
 };
 
@@ -151,6 +164,7 @@ const deleteProductHandler = async (req, res) => {
 
 module.exports = {
   getProductHandler,
+  getFilterHandler,
   getDetailHandler,
   postProductHandler,
   putProductHandler,

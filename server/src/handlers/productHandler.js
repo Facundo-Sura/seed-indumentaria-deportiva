@@ -29,9 +29,9 @@ const getFilterHandler = async (req, res) => {
   const { category, gender, color, size, rating, min, max } = req.query;
   
   try {
-    if (!category && !gender && !color && !size && !rating && !min && !max) {
-      return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
-    }
+    // if (!category && !gender && !color && !size && !rating && !min && !max) {
+    //   return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
+    // }
 
     const response = await getProductsFilter(
       category,

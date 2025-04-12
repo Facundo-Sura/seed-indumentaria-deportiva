@@ -5,7 +5,6 @@ import Cards from "@/components/Cards";
 import Sidebar from "@/components/Sidebar";
 import Pagination from "@/components/Pagination";
 
-//defino la interfaz para los producos
 interface Product {
     id: string;
     name: string;
@@ -14,42 +13,59 @@ interface Product {
 }
 
 const Products: React.FC = () => {
-    const [products, setProducts] = useState<Product[]>([]); //defino el estado de los productos
-    const [currentPage, setCurrentPage] = useState(1);//defino el estado de la pagina actual
-    const [productsPerPage] = useState(9);//defino el estado de la cantidad de productos por pagina
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productsPerPage] = useState(9);
+    const [products, setProducts] = useState<any[]>([]);
+    const [initialLoad, setInitialLoad] = useState(true);
 
-    //Funcion para obrener los productos
-    const fetchProducts = async () => {
-        try {
-            const response = await axios.get('http://localhost:5000/products');
-            setProducts(response.data);
-            console.log(response);
-        } catch (error) {
-            console.error('Error fetching products: ', error);
-        }
-    };
-
-    //Ejecutar la funcion al vargar la página
     useEffect(() => {
-        fetchProducts()
-    }, [])
+        const fetchProducts = async () => {
+            try {
+                const response = await axios.get('http://localhost:5000/products');
+                setProducts(response.data);
+            } catch (error) {
+                console.error('Error loading products:', error);
+            } finally {
+                setInitialLoad(false);
+            }
+        };
 
-    //Calcular el indice del ultimo producto de la pagina actual
+        fetchProducts();
+    }, []);
+
+    if (initialLoad) return <div>Cargando productos...</div>;
+
     const indexOfLastProduct = currentPage * productsPerPage;
-    //Calcular el indice del primer producto de la pagina actual
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-    //Obtener los productos de la pagina actual
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
-    //Funcion para cambiar de pagina
     const handlePageChange = (page: number) => setCurrentPage(page);
 
     return (
-        <div className="grid grid-cols-4 items-center grid-rows-1 justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <Sidebar />
-            <main className="col-span-3">
-            <Cards products={currentProducts} />
-            <Pagination currentPage={currentPage} totalPages={Math.ceil(products.length / productsPerPage)} onPageChange={handlePageChange} />
-            </main>
+        <div className="flex flex-col min-h-screen p-8 pb-20 gap-8 sm:p-6 font-[family-name:var(--font-geist-sans)]">
+            {/* Contenedor principal */}
+            <div className="flex flex-1 gap-8">
+                {/* Sidebar - ahora con ancho fijo y alineación perfecta */}
+                <div className="hidden md:block w-64 h-[calc(100vh-180px)] sticky top-28">
+                    <Sidebar
+                        initialProducts={products}
+                        onProductsFiltered={setProducts}
+                    />
+                </div>
+                
+                {/* Contenido principal */}
+                <main className="flex-1">
+                    <Cards products={currentProducts} />
+                </main>
+            </div>
+            
+            {/* Paginación - ahora fuera del main para mejor alineación */}
+            <div className="mt-auto">
+                <Pagination 
+                    currentPage={currentPage} 
+                    totalPages={Math.ceil(products.length / productsPerPage)} 
+                    onPageChange={handlePageChange} 
+                />
+            </div>
         </div>
     )
 }

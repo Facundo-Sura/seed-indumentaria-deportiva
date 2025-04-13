@@ -27,11 +27,21 @@ const getProductHandler = async (req, res) => {
 
 const getFilterHandler = async (req, res) => {
   const { category, gender, color, size, rating, min, max } = req.query;
-  
+
   try {
-    // if (!category && !gender && !color && !size && !rating && !min && !max) {
-    //   return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
-    // }
+    if (!category && !gender && !color && !size && !rating && !min && !max) {
+      //   return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
+      const allProducts = await getAllProducts();
+      return res.status(200).json(allProducts);
+    }
+
+    const ratingNum = rating ? Number(rating) : undefined;
+    const minNum = min ? Number(min) : undefined;
+    const maxNum = max ? Number(max) : undefined;
+    
+    if (rating && isNaN(ratingNum)) {
+      return res.status(400).json({ error: "Rating debe ser un número" });
+    }
 
     const response = await getProductsFilter(
       category,

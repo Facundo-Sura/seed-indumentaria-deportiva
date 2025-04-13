@@ -34,57 +34,62 @@ const getProductsFilter = async (
 ) => {
   const whereClause = {};
 
-  if (category) {
-    whereClause.category = {
-      [Op.iLike]: `%${category}%`,
-    };
+  try {
+    if (category) {
+      whereClause.category = {
+        [Op.iLike]: `%${category}%`,
+      };
+    }
+
+    if (gender) {
+      whereClause.gender = {
+        [Op.iLike]: `%${gender}%`,
+      };
+    }
+
+    if (color) {
+      const searchColor = color.toLowerCase();
+      whereClause.color = {
+        [Op.contains]: [searchColor],
+      };
+    }
+
+    if (size) {
+      const searchSize = size.toUpperCase();
+      whereClause.size = {
+        [Op.contains]: [searchSize], // Busca si el array contiene el tamaño especificado,
+      };
+    }
+
+    if (rating) {
+      whereClause.rating = {
+        [Op.gte]: rating,
+      };
+    }
+
+    if (min && max) {
+      whereClause.price = {
+        [Op.between]: [min, max],
+      };
+    } else if (min) {
+      whereClause.price = {
+        [Op.gte]: min,
+      };
+    } else if (max) {
+      whereClause.price = {
+        [Op.lte]: max,
+      };
+    }
+
+    const filteredProducts = await Product.findAll({
+      where: whereClause,
+    });
+
+    return filteredProducts;
+  } catch (error) {
+    console.error("Error filtering products:", error);
+    throw new Error("Error al filtrar productos");
   }
-
-  if (gender) {
-    whereClause.gender = {
-      [Op.iLike]: `%${gender}%`,
-    };
-  }
-
-  if (color) {
-    const searchColor = color.toLowerCase();
-    whereClause.color = {
-      [Op.contains]: [searchColor]
-    };
-  }
-
-  if (size) {
-    const searchSize = size.toUpperCase();
-    whereClause.size = {
-      [Op.contains]: [searchSize] // Busca si el array contiene el tamaño especificado,
-    };
-  }
-
-  if (rating) {
-    whereClause.rating = {
-      [Op.gte]: rating,
-    };
-  }
-
-  if (min && max) {
-    whereClause.price = {
-      [Op.between]: [min, max],
-    };
-  } else if (min) {
-    whereClause.price = {
-      [Op.gte]: min,
-    };
-  } else if (max) {
-    whereClause.price = {
-      [Op.lte]: max,
-    };
-  }
-
-  const filteredProducts = await Product.findAll({
-    where: whereClause,
-  });
-
-  return filteredProducts;
 };
 
 const postProduct = async (

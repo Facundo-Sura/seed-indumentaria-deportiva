@@ -12,7 +12,8 @@ interface Product {
   size: string[];
   color: string[];
   rating: number;
-  // otros campos...
+  isOnSale?: boolean;
+  discountPercentage?: number;
 }
 
 interface FilterOptions {
@@ -37,8 +38,8 @@ const useFilters = (initialProducts: Product[] = []) => {
   const [error, setError] = useState<Error | null>(null);
   const [activeFilters, setActiveFilters] = useState<ActiveFilters>({});
   
-  const BASE_URL = 'http://localhost:5000';
-  const FILTER_ENDPOINT = `${BASE_URL}/products/filter`;
+  const BASE_URL = 'http://localhost:5000/products';
+  const FILTER_ENDPOINT = `${BASE_URL}/filter`;
 
   // Extraemos las opciones de filtro de los productos
   const filterOptions: FilterOptions = useMemo(() => {

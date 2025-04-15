@@ -8,37 +8,40 @@ interface PaginationProps {
 }
 
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
-  // Función para ir a la primera página
-  const goToFirstPage = () => {
-    onPageChange(1);
-  };
+  const goToFirstPage = () => onPageChange(1);
+  const goToPreviousPage = () => onPageChange(currentPage - 1);
+  const goToNextPage = () => onPageChange(currentPage + 1);
+  const goToLastPage = () => onPageChange(totalPages);
 
-  // Función para ir a la página anterior
-  const goToPreviousPage = () => {
-    onPageChange(currentPage - 1);
-  };
+  // Mostrar solo un subconjunto de páginas en móvil
+  const getVisiblePages = () => {
+    const visiblePages = [];
+    const maxVisible = window.innerWidth < 768 ? 3 : 5;
 
-  // Función para ir a la página siguiente
-  const goToNextPage = () => {
-    onPageChange(currentPage + 1);
-  };
+    let start = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let end = Math.min(totalPages, start + maxVisible - 1);
 
-  // Función para ir a la última página
-  const goToLastPage = () => {
-    onPageChange(totalPages);
+    if (end - start + 1 < maxVisible) {
+      start = Math.max(1, end - maxVisible + 1);
+    }
+
+    for (let i = start; i <= end; i++) {
+      visiblePages.push(i);
+    }
+
+    return visiblePages;
   };
 
   return (
-    <div className="flex justify-center items-center space-x-2 my-4">
+    <div className="flex justify-center items-center flex-wrap gap-1 sm:gap-2 my-4">
       {/* Botón para ir a la primera página */}
       <button
         onClick={goToFirstPage}
         disabled={currentPage === 1}
-        className={`p-2 rounded-lg ${
-          currentPage === 1
-            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-black text-white hover:bg-slate-600'
-        }`}
+        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
+            ? 'bg-black text-white cursor-not-allowed'
+            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+          }`}
         aria-label="Ir a la primera página"
       >
         <FaAngleDoubleLeft />
@@ -48,42 +51,49 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       <button
         onClick={goToPreviousPage}
         disabled={currentPage === 1}
-        className={`p-2 rounded-lg ${
-          currentPage === 1
-            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-black text-white hover:bg-slate-600'
-        }`}
+        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
+            ? 'bg-black text-white cursor-not-allowed'
+            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+          }`}
         aria-label="Ir a la página anterior"
       >
         <FaAngleLeft />
       </button>
 
+      {/* Mostrar "..." si hay páginas anteriores no visibles */}
+      {getVisiblePages()[0] > 1 && (
+        <span className="px-2 py-1">...</span>
+      )}
+
       {/* Números de página */}
-      {Array.from({ length: totalPages }, (_, index) => (
+      {getVisiblePages().map((page) => (
         <button
-          key={index + 1}
-          onClick={() => onPageChange(index + 1)}
-          disabled={currentPage === index + 1}
-          className={`px-3 py-2 rounded-lg ${
-            currentPage === index + 1
-              ? 'bg-white text-black'
-              : 'bg-black text-white hover:bg-slate-600'
-          }`}
-          aria-label={`Ir a la página ${index + 1}`}
+          key={page}
+          onClick={() => onPageChange(page)}
+          disabled={currentPage === page}
+          className={`px-2 sm:px-3 py-1 sm:py-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === page
+              ? 'bg-black text-white hover:bg-slate-600'
+              : 'bg-white text-black border border-black hover:bg-slate-600 hover:text-white'
+            }`}
+          aria-label={`Ir a la página ${page}`}
         >
-          {index + 1}
+          {page}
         </button>
       ))}
+
+      {/* Mostrar "..." si hay páginas posteriores no visibles */}
+      {getVisiblePages()[getVisiblePages().length - 1] < totalPages && (
+        <span className="px-2 py-1">...</span>
+      )}
 
       {/* Botón para ir a la página siguiente */}
       <button
         onClick={goToNextPage}
         disabled={currentPage === totalPages}
-        className={`p-2 rounded-lg ${
-          currentPage === totalPages
-            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-black text-white hover:bg-slate-600'
-        }`}
+        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
+            ? 'bg-black text-white cursor-not-allowed'
+            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+          }`}
         aria-label="Ir a la página siguiente"
       >
         <FaAngleRight />
@@ -93,11 +103,10 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       <button
         onClick={goToLastPage}
         disabled={currentPage === totalPages}
-        className={`p-2 rounded-lg ${
-          currentPage === totalPages
-            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-black text-white hover:bg-slate-600'
-        }`}
+        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
+            ? 'bg-black text-white cursor-not-allowed'
+            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+          }`}
         aria-label="Ir a la última página"
       >
         <FaAngleDoubleRight />

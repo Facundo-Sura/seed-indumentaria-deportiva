@@ -40,7 +40,7 @@ const FilterSection = ({ title, items, activeItem, onSelect, disabled }: {
 
   return (
     <div>
-      <button 
+      <button
         onClick={() => setIsExpanded(!isExpanded)}
         className="flex items-center justify-between w-full font-semibold mb-2"
         disabled={disabled}
@@ -48,7 +48,7 @@ const FilterSection = ({ title, items, activeItem, onSelect, disabled }: {
         <span>{title}</span>
         {isExpanded ? <FiChevronUp /> : <FiChevronDown />}
       </button>
-      
+
       {isExpanded && (
         <div className="space-y-2">
           {items.map((item, index) => (
@@ -156,7 +156,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
           {/* Filtros con scroll */}
           <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
             <div className="space-y-6 pb-4">
-              <SortSection 
+              <SortSection
                 activeSort={activeFilters.sort}
                 onSortChange={(value) => updateFilters({
                   ...activeFilters,
@@ -166,7 +166,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
               />
 
               {filterOptions.categories && filterOptions.categories.length > 0 && (
-                <FilterSection 
+                <FilterSection
                   title="Categorías"
                   items={filterOptions.categories}
                   activeItem={activeFilters.category}
@@ -176,7 +176,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
               )}
 
               {filterOptions.genders && filterOptions.genders.length > 0 && (
-                <FilterSection 
+                <FilterSection
                   title="Género"
                   items={filterOptions.genders}
                   activeItem={activeFilters.gender}
@@ -186,7 +186,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
               )}
 
               {filterOptions.sizes && filterOptions.sizes.length > 0 && (
-                <FilterSection 
+                <FilterSection
                   title="Tallas"
                   items={filterOptions.sizes}
                   activeItem={activeFilters.size}
@@ -196,7 +196,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
               )}
 
               {filterOptions.colors && filterOptions.colors.length > 0 && (
-                <FilterSection 
+                <FilterSection
                   title="Colores"
                   items={filterOptions.colors}
                   activeItem={activeFilters.color}
@@ -205,7 +205,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
                 />
               )}
 
-              <RatingFilter 
+              <RatingFilter
                 activeRating={activeFilters.minRating}
                 onRatingChange={(value) => updateFilters({
                   ...activeFilters,
@@ -231,7 +231,7 @@ const Sidebar = ({ initialProducts, onProductsFiltered }: SidebarProps) => {
 
       {/* Mobile overlay */}
       {isOpen && (
-        <div 
+        <div
           onClick={() => setIsOpen(false)}
           className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
         />

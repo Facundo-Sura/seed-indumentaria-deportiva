@@ -17,6 +17,7 @@ const Products: React.FC = () => {
     const [productsPerPage] = useState(9);
     const [products, setProducts] = useState<any[]>([]);
     const [initialLoad, setInitialLoad] = useState(true);
+    const [showSidebar, setShowSidebar] = useState(false);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -33,7 +34,7 @@ const Products: React.FC = () => {
         fetchProducts();
     }, []);
 
-    if (initialLoad) return <div>Cargando productos...</div>;
+    if (initialLoad) return <div className="flex justify-center items-center h-screen">Cargando productos...</div>;
 
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -41,11 +42,19 @@ const Products: React.FC = () => {
     const handlePageChange = (page: number) => setCurrentPage(page);
 
     return (
-        <div className="flex flex-col min-h-screen p-8 pb-20 gap-8 sm:p-6 font-[family-name:var(--font-geist-sans)]">
+        <div className="flex flex-col min-h-screen p-4 pb-20 gap-4 md:p-8 md:gap-8 font-[family-name:var(--font-geist-sans)]">
+            {/* Mobile sidebar toggle button */}
+            <button 
+                className="md:hidden bg-black text-white p-2 rounded-lg self-start"
+                onClick={() => setShowSidebar(!showSidebar)}
+            >
+                {showSidebar ? 'Ocultar filtros' : 'Mostrar filtros'}
+            </button>
+
             {/* Contenedor principal */}
-            <div className="flex flex-1 gap-8">
-                {/* Sidebar - ahora con ancho fijo y alineación perfecta */}
-                <div className="hidden md:block w-64 h-[calc(100vh-180px)] sticky top-28">
+            <div className="flex flex-1 flex-col md:flex-row gap-4 md:gap-8">
+                {/* Sidebar - responsive */}
+                <div className={`${showSidebar ? 'block' : 'hidden'} md:block w-full md:w-64 h-auto md:h-[calc(100vh-180px)] md:sticky md:top-28`}>
                     <Sidebar
                         initialProducts={products}
                         onProductsFiltered={setProducts}
@@ -58,7 +67,7 @@ const Products: React.FC = () => {
                 </main>
             </div>
             
-            {/* Paginación - ahora fuera del main para mejor alineación */}
+            {/* Paginación */}
             <div className="mt-auto">
                 <Pagination 
                     currentPage={currentPage} 

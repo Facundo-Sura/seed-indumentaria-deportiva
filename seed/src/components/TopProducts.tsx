@@ -32,11 +32,11 @@ const TopProducts: React.FC<TopProductsProps> = ({ products }) => {
       {/* Flecha izquierda */}
       <button
         onClick={scrollLeft}
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md hover:bg-black transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-gray-600"
+          className="h-6 w-6 text-gray-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -70,11 +70,11 @@ const TopProducts: React.FC<TopProductsProps> = ({ products }) => {
       {/* Flecha derecha */}
       <button
         onClick={scrollRight}
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md hover:bg-black transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-gray-600"
+          className="h-6 w-6 text-gray-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

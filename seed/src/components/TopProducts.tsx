@@ -49,6 +49,7 @@ const TopProducts: React.FC<TopProductsProps> = ({ products }) => {
       <div
         ref={scrollRef}
         className="flex overflow-x-scroll scroll-smooth w-full gap-4 px-4 py-2"
+        id='topProducts'
       >
         {products.length > 0 ? (
           products.slice(0, 7).map((product) => (

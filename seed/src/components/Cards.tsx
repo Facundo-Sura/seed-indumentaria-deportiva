@@ -21,7 +21,8 @@ const Cards: React.FC<CardsProps> = ({ products }) => {
                     id={product.id} 
                     name={product.name} 
                     price={product.price} 
-                    image={product.image} 
+                    image={product.image}
+                    layout='grid'
                 />
             ))}
         </div>

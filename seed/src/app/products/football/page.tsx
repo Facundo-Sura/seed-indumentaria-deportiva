@@ -24,7 +24,7 @@ const Football: React.FC = () => {
         }
     };
 
-    //Ejecutar la funcion al vargar la página
+    //Ejecutar la funcion al cargar la página
     useEffect(() => {
         fetchProducts()
     }, [])

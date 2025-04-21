@@ -43,3 +43,12 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+#topProducts {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#topProducts::-webkit-scrollbar {
+  display: none;
+}

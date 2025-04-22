@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     gender: {
-      type: DataTypes.ENUM("hombre", "mujer", "niño", "unisex"), // Género al que va dirigido
+      type: DataTypes.ARRAY(DataTypes.STRING), // Género al que va dirigido
       allowNull: false,
     },
     size: {

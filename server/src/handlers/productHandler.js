@@ -26,12 +26,13 @@ const getProductHandler = async (req, res) => {
 };
 
 const getFilterHandler = async (req, res) => {
-  const { category, gender, color, size, rating, min, max } = req.query;
+  const { category, gender, size, color, brand, material, season, isOnSale, rating, min, max } = req.query;
 
   try {
-    if (!category && !gender && !color && !size && !rating && !min && !max) {
+    if (!category && !gender && !size && !color && !brand && !material && !season && !isOnSale && !rating && !min && !max) {
       //   return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
       const allProducts = await getAllProducts();
+      console.log(allProducts);
       return res.status(200).json(allProducts);
     }
 
@@ -46,8 +47,12 @@ const getFilterHandler = async (req, res) => {
     const response = await getProductsFilter(
       category,
       gender,
-      color,
       size,
+      color,
+      brand,
+      material,
+      season,
+      isOnSale,
       rating,
       min,
       max
@@ -75,10 +80,13 @@ const postProductHandler = async (req, res) => {
     description,
     image,
     category,
-    rating,
     stock,
     gender,
     size,
+    color,
+    brand,
+    material,
+    season
   } = req.body;
   try {
     const response = await postProduct(
@@ -87,17 +95,20 @@ const postProductHandler = async (req, res) => {
       description,
       image,
       category,
-      rating,
       stock,
       gender,
-      size
+      size,
+      color,
+      brand,
+      material,
+      season
     );
     res.status(200).json(response);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 };
-
+// Modifiacion completa de producto
 const putProductHandler = async (req, res) => {
   const { id } = req.params;
   const {
@@ -125,11 +136,12 @@ const putProductHandler = async (req, res) => {
       size
     );
     res.status(200).json(response);
+    console.log(response);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 };
-
+// Modifiacion parcial de producto
 const patchProductHandler = async (req, res) => {
   const { id } = req.params;
   const {
@@ -157,6 +169,7 @@ const patchProductHandler = async (req, res) => {
       size
     );
     res.status(200).json(response);
+    console.log(response);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

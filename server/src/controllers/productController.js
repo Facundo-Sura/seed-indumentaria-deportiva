@@ -26,8 +26,12 @@ const getProductName = async (name) => {
 const getProductsFilter = async (
   category,
   gender,
-  color,
   size,
+  color,
+  brand,
+  material,
+  season,
+  isOnSale,
   rating,
   min,
   max
@@ -42,8 +46,16 @@ const getProductsFilter = async (
     }
 
     if (gender) {
+      const searchGender = gender.toLowerCase();
       whereClause.gender = {
-        [Op.iLike]: `%${gender}%`,
+        [Op.contains]: [searchGender],
+      };
+    }
+
+    if (size) {
+      const searchSize = size.toUpperCase();
+      whereClause.size = {
+        [Op.contains]: [searchSize],
       };
     }
 
@@ -54,11 +66,26 @@ const getProductsFilter = async (
       };
     }
 
-    if (size) {
-      const searchSize = size.toUpperCase();
-      whereClause.size = {
-        [Op.contains]: [searchSize], // Busca si el array contiene el tamaño especificado,
+    if (brand) {
+      whereClause.brand = {
+        [Op.iLike]: `%${brand}%`,
       };
+    }
+
+    if (material) {
+      whereClause.material = {
+        [Op.iLike]: `%${material}%`,
+      };
+    }
+
+    if (season) {
+      whereClause.season = {
+        [Op.iLike]: `%${season}%`,
+      };
+    }
+
+    if (isOnSale) {
+      whereClause.isOnSale = isOnSale;
     }
 
     if (rating) {
@@ -98,25 +125,34 @@ const postProduct = async (
   description,
   image,
   category,
-  rating,
   stock,
   gender,
-  size
+  size,
+  color,
+  brand,
+  material,
+  season
 ) => {
-  return await Product.create({
+  const newProduct = await Product.create({
     name,
     price,
     description,
     image,
     category,
-    rating,
     stock,
     gender,
     size,
+    color,
+    brand,
+    material,
+    season,
   });
-};
 
+  return newProduct;
+};
+// Modifiacion completa de producto
 const putProduct = async (
+  id,
   name,
   price,
   description,
@@ -146,18 +182,68 @@ const putProduct = async (
     }
   );
 };
-
+// Modifiacion parcial de producto
 const patchProduct = async (id, rating) => {
-  return await Product.update(
-    {
-      rating,
-    },
-    {
-      where: {
-        id: id,
-      },
+  try {
+    // Verificar si el producto existe
+    const existingProduct = await Product.findByPk(id);
+    if (!existingProduct) {
+      throw new Error("Producto no encontrado");
     }
-  );
+
+    // Validar el rating (ahora manejando tanto número como array)
+    let ratingValue;
+    
+    if (Array.isArray(rating)) {
+      ratingValue = parseFloat(rating[0]); // Convertir a número si viene como string
+    } else {
+      ratingValue = parseFloat(rating);
+    }
+    
+    if (isNaN(ratingValue) || ratingValue < 0 || ratingValue > 5) {
+      throw new Error("El rating debe ser un número entre 0 y 5");
+    }
+
+    // Obtener el array actual de ratings
+    let currentRatings = [];
+    if (existingProduct.rating) {
+      currentRatings = Array.isArray(existingProduct.rating) 
+        ? existingProduct.rating 
+        : [existingProduct.rating];
+    }
+    
+    // Agregar el nuevo rating al array
+    const newRatings = [...currentRatings, ratingValue];
+    
+    // Calcular el promedio
+    const averageRating = newRatings.reduce((a, b) => a + b, 0) / newRatings.length;
+
+    // Actualizar el producto
+    const [updatedRows] = await Product.update(
+      {
+        rating: newRatings
+      },
+      {
+        where: {
+          id: id
+        }
+      }
+    );
+
+    if (updatedRows === 0) {
+      throw new Error("No se pudo actualizar el producto");
+    }
+
+    return { 
+      success: true, 
+      message: "Producto actualizado correctamente",
+      ratings: newRatings,
+      averageRating: Number(averageRating.toFixed(2)),
+      totalRatings: newRatings.length
+    };
+  } catch (error) {
+    throw new Error(`Error al actualizar el producto: ${error.message}`);
+  }
 };
 
 const deleteProduct = async (id) => {

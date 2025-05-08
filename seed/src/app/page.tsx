@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 import TopProducts from "@/components/TopProducts";
+import Carrousell from "@/components/Carrousell";
 
 interface Product {
   id: string;
@@ -52,8 +53,20 @@ export default function Home() {
     fetchProductsGimnasio()
   }, [])
 
+  // Imágenes para el carrusel
+  const images = [
+    '/imagenes/promo.jpg',
+    '/imagenes/ubi.jpg',
+    '/imagenes/cole.jpg'
+  ];
+
   return (
     <div className="min-h-screen bg-gray-100 font-[family-name:var(--font-geist-sans)]">
+      <Carrousell images={images} autoPlayInterval={5000} />
+      {/* Secciín de Coleccionaes */}
+      <h1 className="text-center font-bold text-6xl pb-16">
+        Nu<span className="text-green-500">e</span>stras Col<span className="text-green-500">e</span>cciones
+      </h1>
       {/* Sección Football */}
       <section className="mb-16">
         <div className="relative h-96 w-full overflow-hidden">
@@ -164,11 +177,11 @@ export default function Home() {
         {/* Área de productos Gym */}
         <div className="max-w-7xl mx-auto px-4 py-12">
           <h3 className="text-2xl font-bold mb-8 text-gray-800">Productos destacados de Gimnasio</h3>
-            <div>
-              {/* Aquí irían tus productos de gym */}
-              <TopProducts products={topProductsGimnasio} />
-            </div>
+          <div>
+            {/* Aquí irían tus productos de gym */}
+            <TopProducts products={topProductsGimnasio} />
           </div>
+        </div>
       </section>
     </div>
   );

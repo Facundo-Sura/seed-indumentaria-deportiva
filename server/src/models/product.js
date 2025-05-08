@@ -64,8 +64,15 @@ module.exports = (sequelize) => {
       defaultValue: 0,
     },
     rating: {
-      type: DataTypes.FLOAT, // Puntuación promedio del producto
-      defaultValue: 0,
+      type: DataTypes.ARRAY(DataTypes.FLOAT),
+      defaultValue: [],
+      validate: {
+        isValidRating(value) {
+          if (value.some((rating) => rating < 0 || rating > 5)) {
+            throw new Error("Todos los ratings deben estar entre 0 y 5");
+          }
+        },
+      },
     },
   });
 };

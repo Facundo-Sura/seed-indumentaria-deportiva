@@ -9,7 +9,7 @@
             ],
             "category": "gimnasio",
             "gender": [
-                ["unisex"]
+                "unisex"
             ],
             "size": [
                 "S",
@@ -36,7 +36,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/buzo%20tommy.jpg"
             ],
             "category": "gimnasio",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -62,7 +64,7 @@
             ],
             "category": "gimnasio",
             "gender": [
-                ["unisex"]
+                "unisex"
             ],
             "size": [
                 "S",
@@ -87,7 +89,7 @@
             ],
             "category": "gimnasio",
             "gender": [
-                ["unisex"]
+                "unisex"
             ],
             "size": [
                 "M",
@@ -111,7 +113,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/short%20under%20armor%20blanco.jpg"
             ],
             "category": "gimnasio",
-            "gender": [["unisex"], "niños"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -136,7 +141,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/short%20under%20armor%20gris.jpg"
             ],
             "category": "gimnasio",
-            "gender": [["unisex"]],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -161,7 +168,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/gimnasio/IMG-20250318-WA0129.jpg"
             ],
             "category": "gimnasio",
-            "gender": ["hombre", "niños"],
+            "gender": [
+                "hombre",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -186,7 +196,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20curry%20frente.jpg"
             ],
             "category": "basket",
-            "gender": [["unisex"], "niños"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -213,7 +226,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20magics%20frente.jpg"
             ],
             "category": "basket",
-            "gender": [["unisex"], "niños"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -240,7 +256,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20jazz%20frente.jpg"
             ],
             "category": "basket",
-            "gender": [["unisex"], "niños"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -256,7 +275,7 @@
             "stock": 100,
             "brand": "nba",
             "material": "polyester",
-            "isOnSale": false ,
+            "isOnSale": false,
             "discountPercentage": 10,
             "rating": 4.4
         },
@@ -268,7 +287,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20boca%20azul.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -296,7 +317,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/short%20heat%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -324,7 +347,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20rallas%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -352,7 +377,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20cavs%20james%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "hombre",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -379,7 +407,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20tatum%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "hombre",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -406,7 +437,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20biggie%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -431,7 +465,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20curry%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "mujer"
+            ],
             "size": [
                 "S",
                 "M",
@@ -459,7 +495,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20boca%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "mujer"
+            ],
             "size": [
                 "S",
                 "M",
@@ -487,7 +525,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20lal%20james%20%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -513,7 +554,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/baquet/camiseta%20morant%20frente.jpg"
             ],
             "category": "basket",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -539,7 +583,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20blanca%20borja.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "mujer",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -566,7 +613,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20rayas%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -593,7 +643,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20blanca%20advincula.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -620,7 +673,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20azul%20zenon.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -647,7 +702,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20blanca%20merentiel.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "mujer"
+            ],
             "size": [
                 "S",
                 "M",
@@ -674,7 +731,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20blanca%20mastantuono.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "mujer",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -701,7 +761,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20talleres%20blanca%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -728,7 +790,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20united%20rojo%20cr7.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -755,7 +819,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20%2B%20azul%20cavani.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -782,7 +848,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20bordo%20acu%C3%B1a.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -809,7 +877,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20negro%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -836,7 +906,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20belgrano%20celeste%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -863,7 +935,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20boca%20azul%20advincula.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -890,7 +964,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20river%20negro%20borja.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -917,7 +993,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%20azul%20messi%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -945,7 +1023,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20milan%20rayas%20negro%20rojo%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -972,7 +1052,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%20azul%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -999,7 +1081,10 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%20blanco%20messi%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex",
+                "niños"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1026,7 +1111,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/camiseta%20argentina%202%20estrellas%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1053,7 +1140,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/shor%20river%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1079,7 +1168,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20boca%20azul%20adidas%20blanco%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1106,7 +1197,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20boca%20azul%20adidas%20amarillo.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1132,7 +1225,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20river%20negro%20adidas%20blanco.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1159,7 +1254,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20inter%20miami%20rosa%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1185,7 +1282,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20blanco%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1212,7 +1311,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20blanco%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1239,7 +1340,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20talleres%20blanco.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1265,7 +1368,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/short%20argentina%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1292,7 +1397,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20celeste.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1319,7 +1426,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20river%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1346,7 +1455,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20azul.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1372,7 +1483,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20negro%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1400,7 +1513,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20dorado.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1427,7 +1542,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20omter%20miami%20negro%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1453,7 +1570,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20dorado.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1480,7 +1599,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20talleres.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1507,7 +1628,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20boca%20azul%20oscuro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1534,7 +1657,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20boca%20azul.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1560,7 +1685,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20boca%20azul%20claro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1587,7 +1714,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/conjunto%20river%20rojo.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1614,7 +1743,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20argentina%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1641,7 +1772,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20dorado.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1669,7 +1802,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/conjunto%20boca%20azul.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1695,7 +1830,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/campera%20argentina%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1722,7 +1859,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20river%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1749,7 +1888,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20argentina%20negro.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1776,7 +1917,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/joggin%20talleres%20negro%20frente.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1802,7 +1945,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/conjunto%20boca%20amarillo.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",
@@ -1828,7 +1973,9 @@
                 "https://storage.googleapis.com/fotos-productos-seed/Seed%20-%20Indumentaria%20Deportiva/futbol/buzo%20argentina%20dorado.jpg"
             ],
             "category": "futbol",
-            "gender": ["unisex"],
+            "gender": [
+                "unisex"
+            ],
             "size": [
                 "S",
                 "M",

@@ -4,7 +4,7 @@ import axios from "axios";
 import Cards from "@/components/Cards";
 
 interface Product {
-    id: number;
+    id: string;
     name: string;
     price: number;
     image: string;
@@ -12,13 +12,11 @@ interface Product {
 
 const Football: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]); //defino el estado de los productos
-    const [currentPage, setCurrentPage] = useState(1);//defino el estado de la pagina actual
-    const [productsPerPage] = useState(9);//defino el estado de la cantidad de productos por pagina
 
     //Funcion para obrener los productos
     const fetchProducts = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/products?category=futbol');
+            const response = await axios.get('http://localhost:5000/products/filter?category=futbol');
             setProducts(response.data);
             console.log(response);
         } catch (error) {
@@ -26,7 +24,7 @@ const Football: React.FC = () => {
         }
     };
 
-    //Ejecutar la funcion al vargar la página
+    //Ejecutar la funcion al cargar la página
     useEffect(() => {
         fetchProducts()
     }, [])

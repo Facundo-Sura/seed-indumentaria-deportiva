@@ -4,7 +4,7 @@ import axios from "axios";
 import Cards from "@/components/Cards";
 
 interface Product {
-    id: number;
+    id: string;
     name: string;
     price: number;
     image: string;
@@ -18,7 +18,7 @@ const Gym: React.FC = () => {
     //Funcion para obrener los productos
     const fetchProducts = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/products?category=gimnasio');
+            const response = await axios.get('http://localhost:5000/products/filter?category=gimnasio');
             setProducts(response.data);
             console.log(response);
         } catch (error) {

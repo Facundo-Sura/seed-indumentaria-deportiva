@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 
-//Defino la interfaz para las props del componente
 interface Product {
     id: string;
     name: string;
@@ -15,9 +14,16 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ products }) => {
     return (
-        <div className='grid grid-cols-3 items-stretch justify-items-center '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 justify-items-center'>
             {products.map((product) => (
-                <Card key={product.id} id={product.id} name={product.name} price={product.price} image={product.image} />
+                <Card 
+                    key={product.id} 
+                    id={product.id} 
+                    name={product.name} 
+                    price={product.price} 
+                    image={product.image}
+                    layout='grid'
+                />
             ))}
         </div>
     );

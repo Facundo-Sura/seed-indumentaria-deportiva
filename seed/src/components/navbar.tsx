@@ -2,9 +2,15 @@
 import Link from 'next/link';
 
 const Navbar = () => {
+  const sliders = [
+    "","",""
+  ]
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4">
+    <header className="bg-white shadow-lg sticky top-0 z-50">
+      <div className='bg-black h-6'>
+        <h1 className='text-white text-center'>sliders</h1>
+      </div>
+      <nav className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 w-24">
@@ -37,8 +43,8 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

@@ -12,10 +12,10 @@ interface Product {
 }
 
 const Products: React.FC = () => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [productsPerPage] = useState(9);
     const [products, setProducts] = useState<any[]>([]);
     const [initialLoad, setInitialLoad] = useState(true);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productsPerPage] = useState(9);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -41,9 +41,7 @@ const Products: React.FC = () => {
 
     return (
         <div className="grid">
-            {/* Contenido principal */}
             <Cards products={currentProducts} />
-            {/* Paginación */}
             <Pagination
                 currentPage={currentPage}
                 totalPages={Math.ceil(products.length / productsPerPage)}

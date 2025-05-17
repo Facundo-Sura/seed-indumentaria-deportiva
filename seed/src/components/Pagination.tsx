@@ -39,8 +39,8 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         onClick={goToFirstPage}
         disabled={currentPage === 1}
         className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la primera página"
       >
@@ -52,8 +52,8 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         onClick={goToPreviousPage}
         disabled={currentPage === 1}
         className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la página anterior"
       >
@@ -91,8 +91,8 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         onClick={goToNextPage}
         disabled={currentPage === totalPages}
         className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la página siguiente"
       >
@@ -104,8 +104,8 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         onClick={goToLastPage}
         disabled={currentPage === totalPages}
         className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la última página"
       >

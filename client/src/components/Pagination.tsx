@@ -38,9 +38,9 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       <button
         onClick={goToFirstPage}
         disabled={currentPage === 1}
-        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+        className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la primera página"
       >
@@ -51,9 +51,9 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       <button
         onClick={goToPreviousPage}
         disabled={currentPage === 1}
-        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+        className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === 1
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la página anterior"
       >
@@ -71,7 +71,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
           key={page}
           onClick={() => onPageChange(page)}
           disabled={currentPage === page}
-          className={`px-2 sm:px-3 py-1 sm:py-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === page
+          className={`sm:px-3 sm:py-1 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === page
               ? 'bg-black text-white hover:bg-slate-600'
               : 'bg-white text-black border border-black hover:bg-slate-600 hover:text-white'
             }`}
@@ -90,9 +90,9 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       <button
         onClick={goToNextPage}
         disabled={currentPage === totalPages}
-        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+        className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la página siguiente"
       >
@@ -103,9 +103,9 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       <button
         onClick={goToLastPage}
         disabled={currentPage === totalPages}
-        className={`p-1 sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
-            ? 'bg-black text-white cursor-not-allowed'
-            : 'bg-gray-200 text-gray-400 hover:bg-slate-600'
+        className={`sm:p-2 rounded-full text-xs sm:text-base hover:cursor-pointer ${currentPage === totalPages
+            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            : 'bg-black text-white hover:bg-slate-600'
           }`}
         aria-label="Ir a la última página"
       >

@@ -2,6 +2,7 @@ const {
   getAllUsers,
   getUserId,
   getUserName,
+  getEmail,
   postUser,
   postAdmin,
   putUser,
@@ -9,10 +10,12 @@ const {
 } = require("../controllers/userController");
 
 const getUsersHandler = async (req, res) => {
-  const { name } = req.query;
+  const { name, email } = req.query;
   try {
     if (name) {
       res.status(200).json(await getUserName(name));
+    } else if (email) {
+      res.status(200).json(await getEmail(email));
     } else {
       const response = await getAllUsers();
       res.status(200).json(response);

@@ -14,7 +14,6 @@ const {
 
 router.get("/", getUsersHandler);
 router.get("/:id", getDetailHandler);
-router.get("/name", getUsersHandler);
 router.post("/post/", postUserHandler);
 router.post("/post/admin", postAdminHandler);
 router.put("/put/:id", putUserHandler);

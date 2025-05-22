@@ -193,13 +193,13 @@ const patchProduct = async (id, rating) => {
 
     // Validar el rating (ahora manejando tanto número como array)
     let ratingValue;
-    
+
     if (Array.isArray(rating)) {
       ratingValue = parseFloat(rating[0]); // Convertir a número si viene como string
     } else {
       ratingValue = parseFloat(rating);
     }
-    
+
     if (isNaN(ratingValue) || ratingValue < 0 || ratingValue > 5) {
       throw new Error("El rating debe ser un número entre 0 y 5");
     }
@@ -207,14 +207,14 @@ const patchProduct = async (id, rating) => {
     // Obtener el array actual de ratings
     let currentRatings = [];
     if (existingProduct.rating) {
-      currentRatings = Array.isArray(existingProduct.rating) 
-        ? existingProduct.rating 
+      currentRatings = Array.isArray(existingProduct.rating)
+        ? existingProduct.rating
         : [existingProduct.rating];
     }
-    
+
     // Agregar el nuevo rating al array
     const newRatings = [...currentRatings, ratingValue];
-    
+
     // Calcular el promedio
     const averageRating = newRatings.reduce((a, b) => a + b, 0) / newRatings.length;
 
@@ -234,8 +234,8 @@ const patchProduct = async (id, rating) => {
       throw new Error("No se pudo actualizar el producto");
     }
 
-    return { 
-      success: true, 
+    return {
+      success: true,
       message: "Producto actualizado correctamente",
       ratings: newRatings,
       averageRating: Number(averageRating.toFixed(2)),

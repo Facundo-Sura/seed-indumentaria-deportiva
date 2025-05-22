@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-6xl mx-auto px-4">
+    <footer className="bg-gray-800 text-white py-8 ">
+      <main className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sección 1: Logo y descripción */}
           <div>
@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
           <p>© {new Date().getFullYear()} Seed. Todos los derechos reservados.</p>
         </div>
-      </div>
+      </main>
     </footer>
   );
 };

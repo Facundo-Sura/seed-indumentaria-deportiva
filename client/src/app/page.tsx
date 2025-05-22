@@ -16,6 +16,7 @@ export default function Home() {
   const [topProductsFutbol, setTopProductsFutbol] = useState<Product[]>([]);
   const [topProductsBasket, setTopProductsBasket] = useState<Product[]>([]);
   const [topProductsGimnasio, setTopProductsGimnasio] = useState<Product[]>([]);
+
   // Función para obtener los productos
   const fetchProductsFutbol = async () => {
     try {
@@ -46,6 +47,7 @@ export default function Home() {
       console.error('Error fetching products: ', error)
     }
   };
+
   // Ejecutar la función al cargar la página
   useEffect(() => {
     fetchProductsFutbol()
@@ -53,18 +55,12 @@ export default function Home() {
     fetchProductsGimnasio()
   }, [])
 
-  // Imágenes para el carrusel
-  const images = [
-    '/imagenes/promo.jpg',
-    '/imagenes/ubi.jpg',
-    '/imagenes/cole.jpg'
-  ];
-
   return (
     <div className="min-h-screen bg-gray-100 font-[family-name:var(--font-geist-sans)]">
-      <Carrousell images={images} autoPlayInterval={5000} />
+      <Carrousell />
+
       {/* Secciín de Coleccionaes */}
-      <h1 className="text-center font-bold text-6xl pb-16">
+      <h1 className="text-center font-bold text-6xl py-16">
         Nu<span className="text-green-500">e</span>stras Col<span className="text-green-500">e</span>cciones
       </h1>
       {/* Sección Football */}

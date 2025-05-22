@@ -11,26 +11,26 @@ interface Product {
     image: string;
 }
 
-const Products: React.FC = () => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [productsPerPage] = useState(9);
+const Basquetball: React.FC = () => {
     const [products, setProducts] = useState<any[]>([]);
     const [initialLoad, setInitialLoad] = useState(true);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productsPerPage] = useState(9);
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/products');
+                const response = await axios.get('http://localhost:5000/products/filter?category=basket');
                 setProducts(response.data);
             } catch (error) {
-                console.error('Error loading products:', error);
+                console.error('Error fetching products: ', error);
             } finally {
                 setInitialLoad(false);
             }
         };
 
-        fetchProducts();
-    }, []);
+        fetchProducts()
+    }, [])
 
     if (initialLoad) return <div className="flex justify-center items-center h-screen">Cargando productos...</div>;
 
@@ -41,9 +41,7 @@ const Products: React.FC = () => {
 
     return (
         <div className="grid">
-            {/* Contenido principal */}
             <Cards products={currentProducts} />
-            {/* Paginación */}
             <Pagination
                 currentPage={currentPage}
                 totalPages={Math.ceil(products.length / productsPerPage)}
@@ -53,4 +51,4 @@ const Products: React.FC = () => {
     )
 }
 
-export default Products;
+export default Basquetball;

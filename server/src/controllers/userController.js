@@ -30,6 +30,28 @@ const getUserName = async (name) => {
   return user;
 };
 
+const getEmail = async (email) => {
+  const user = (await axios.get(`${URL}?email=${email}`)).data.filter(
+    (user) => user.email === email
+  );
+
+  if (user.length === 0) {
+    // Intentar buscar en la base de datos
+    const dbUser = await User.findAll({
+      where: {
+        email: email,
+      },
+    });
+    
+    if (dbUser.length === 0) {
+      throw Error("Email not found");
+    }
+    return dbUser;
+  }
+  
+  return user;
+};
+
 const postUser = async (email, name, password) => {
   return await User.create({
     email,
@@ -91,6 +113,7 @@ module.exports = {
   getAllUsers,
   getUserId,
   getUserName,
+  getEmail,
   postUser,
   postAdmin,
   putUser,

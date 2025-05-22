@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { SearchBar } from './Search';
+import { LoginForm } from './Login';
 
 const Navbar = () => {
     const sliders = [
@@ -34,9 +35,7 @@ const Navbar = () => {
                     {/* Iconos de acción */}
                     <div className="flex items-center space-x-4">
                         <SearchBar />
-                        <Link href="/account" className="p-2 hover:text-green-400">
-                            👤
-                        </Link>
+                        <LoginForm />
                         <Link href="/cart" className="p-2 hover:text-green-400">
                             🛒
                         </Link>

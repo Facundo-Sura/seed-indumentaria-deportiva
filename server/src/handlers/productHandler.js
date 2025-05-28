@@ -26,22 +26,24 @@ const getProductHandler = async (req, res) => {
 };
 
 const getFilterHandler = async (req, res) => {
-  const { category, gender, size, color, brand, material, season, isOnSale, rating, min, max } = req.query;
+  const { category, gender, size, color, brand, material, season, isOnSale } =
+    req.query;
 
   try {
-    if (!category && !gender && !size && !color && !brand && !material && !season && !isOnSale && !rating && !min && !max) {
+    if (
+      !category &&
+      !gender &&
+      !size &&
+      !color &&
+      !brand &&
+      !material &&
+      !season &&
+      !isOnSale
+    ) {
       //   return res.status(400).json({ error: "Al menos un parámetro de filtro es requerido" });
       const allProducts = await getAllProducts();
       console.log(allProducts);
       return res.status(200).json(allProducts);
-    }
-
-    const ratingNum = rating ? Number(rating) : undefined;
-    const minNum = min ? Number(min) : undefined;
-    const maxNum = max ? Number(max) : undefined;
-    
-    if (rating && isNaN(ratingNum)) {
-      return res.status(400).json({ error: "Rating debe ser un número" });
     }
 
     const response = await getProductsFilter(
@@ -52,10 +54,7 @@ const getFilterHandler = async (req, res) => {
       brand,
       material,
       season,
-      isOnSale,
-      rating,
-      min,
-      max
+      isOnSale
     );
     return res.status(200).json(response);
   } catch (error) {
@@ -86,8 +85,8 @@ const postProductHandler = async (req, res) => {
     color,
     brand,
     material,
-    season
   } = req.body;
+
   try {
     const response = await postProduct(
       name,
@@ -95,15 +94,15 @@ const postProductHandler = async (req, res) => {
       description,
       image,
       category,
-      stock,
       gender,
       size,
       color,
+      stock,
       brand,
-      material,
-      season
+      material
     );
-    res.status(200).json(response);
+    console.log(response);
+    res.status(200).json({message: 'producto creado'});
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -135,8 +134,8 @@ const putProductHandler = async (req, res) => {
       gender,
       size
     );
-    res.status(200).json(response);
     console.log(response);
+    res.status(200).json({message: 'producto modificado'});
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -144,32 +143,13 @@ const putProductHandler = async (req, res) => {
 // Modifiacion parcial de producto
 const patchProductHandler = async (req, res) => {
   const { id } = req.params;
-  const {
-    name,
-    price,
-    description,
-    image,
-    category,
-    rating,
-    stock,
-    gender,
-    size,
-  } = req.body;
+
+  const { rating } = req.body;
+
   try {
-    const response = await patchProduct(
-      id,
-      name,
-      price,
-      description,
-      image,
-      category,
-      rating,
-      stock,
-      gender,
-      size
-    );
-    res.status(200).json(response);
+    const response = await patchProduct(id, rating);
     console.log(response);
+    res.status(200).json({ message: "valoracion agregada" });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -177,9 +157,11 @@ const patchProductHandler = async (req, res) => {
 
 const deleteProductHandler = async (req, res) => {
   const { id } = req.params;
+
   try {
     const response = await deleteProduct(id);
-    res.status(200).json(response);
+    console.log(response);
+    res.status(200).json({ message: "Producto eliminado" });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

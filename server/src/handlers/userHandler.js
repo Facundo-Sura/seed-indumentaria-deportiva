@@ -2,7 +2,6 @@ const {
   getAllUsers,
   getUserId,
   getUserName,
-  getEmail,
   postUser,
   postAdmin,
   putUser,
@@ -10,12 +9,10 @@ const {
 } = require("../controllers/userController");
 
 const getUsersHandler = async (req, res) => {
-  const { name, email } = req.query;
+  const { name } = req.query;
   try {
     if (name) {
       res.status(200).json(await getUserName(name));
-    } else if (email) {
-      res.status(200).json(await getEmail(email));
     } else {
       const response = await getAllUsers();
       res.status(200).json(response);
@@ -39,7 +36,8 @@ const postUserHandler = async (req, res) => {
   const { name, email, password } = req.body;
   try {
     const response = await postUser(name, email, password);
-    res.status(200).json(response);
+    console.log(response);
+    res.status(200).json({message: 'Usuario creado'});
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

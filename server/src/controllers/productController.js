@@ -31,10 +31,7 @@ const getProductsFilter = async (
   brand,
   material,
   season,
-  isOnSale,
-  rating,
-  min,
-  max
+  isOnSale
 ) => {
   const whereClause = {};
 
@@ -88,26 +85,6 @@ const getProductsFilter = async (
       whereClause.isOnSale = isOnSale;
     }
 
-    if (rating) {
-      whereClause.rating = {
-        [Op.gte]: rating,
-      };
-    }
-
-    if (min && max) {
-      whereClause.price = {
-        [Op.between]: [min, max],
-      };
-    } else if (min) {
-      whereClause.price = {
-        [Op.gte]: min,
-      };
-    } else if (max) {
-      whereClause.price = {
-        [Op.lte]: max,
-      };
-    }
-
     const filteredProducts = await Product.findAll({
       where: whereClause,
     });
@@ -125,30 +102,37 @@ const postProduct = async (
   description,
   image,
   category,
-  stock,
   gender,
   size,
   color,
+  stock,
   brand,
-  material,
-  season
+  material
 ) => {
+  // Validaciones básicas
+  if (!Array.isArray(image))
+    throw new Error("El campo image debe ser un array de URLs");
+  if (!Array.isArray(gender))
+    throw new Error("El campo gender debe ser un array");
+  if (!Array.isArray(size)) throw new Error("El campo size debe ser un array");
+  if (!Array.isArray(color))
+    throw new Error("El campo color debe ser un array");
+
   const newProduct = await Product.create({
     name,
     price,
     description,
     image,
     category,
-    stock,
     gender,
     size,
     color,
+    stock,
     brand,
     material,
-    season,
   });
 
-  return newProduct;
+  return newProduct.toJSON();
 };
 // Modifiacion completa de producto
 const putProduct = async (
@@ -216,17 +200,18 @@ const patchProduct = async (id, rating) => {
     const newRatings = [...currentRatings, ratingValue];
 
     // Calcular el promedio
-    const averageRating = newRatings.reduce((a, b) => a + b, 0) / newRatings.length;
+    const averageRating =
+      newRatings.reduce((a, b) => a + b, 0) / newRatings.length;
 
     // Actualizar el producto
     const [updatedRows] = await Product.update(
       {
-        rating: newRatings
+        rating: newRatings,
       },
       {
         where: {
-          id: id
-        }
+          id: id,
+        },
       }
     );
 
@@ -239,7 +224,7 @@ const patchProduct = async (id, rating) => {
       message: "Producto actualizado correctamente",
       ratings: newRatings,
       averageRating: Number(averageRating.toFixed(2)),
-      totalRatings: newRatings.length
+      totalRatings: newRatings.length,
     };
   } catch (error) {
     throw new Error(`Error al actualizar el producto: ${error.message}`);

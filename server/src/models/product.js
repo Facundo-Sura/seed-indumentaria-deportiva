@@ -51,16 +51,14 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING, // Ej: "algodón", "poliéster"
       allowNull: true, // Opcional
     },
-    season: {
-      type: DataTypes.STRING, // Ej: "verano", "invierno"
-      allowNull: true, // Opcional
-    },
     isOnSale: {
       type: DataTypes.BOOLEAN, // ¿Está en oferta?
+      allowNull: true,
       defaultValue: false,
     },
     discountPercentage: {
       type: DataTypes.INTEGER, // Porcentaje de descuento (ej: 20)
+      allowNull: true, // Opciona
       defaultValue: 0,
     },
     rating: {

@@ -22,7 +22,7 @@ export const SearchBar = () => {
             {!isOpen ? (
                 <button 
                     onClick={() => setIsOpen(true)} 
-                    className="p-2 hover:text-green-400"
+                    className="p-2 hover:cursor-pointer"
                 >
                     🔍
                 </button>

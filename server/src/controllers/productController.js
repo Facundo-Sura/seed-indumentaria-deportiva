@@ -8,7 +8,6 @@ const getAllProducts = async () => {
 
 const getProductId = async (id) => {
   const product = await Product.findByPk(id);
-  console.log(product);
   return product;
 };
 
@@ -134,6 +133,7 @@ const postProduct = async (
 
   return newProduct.toJSON();
 };
+
 // Modifiacion completa de producto
 const putProduct = async (
   id,
@@ -166,6 +166,7 @@ const putProduct = async (
     }
   );
 };
+
 // Modifiacion parcial de producto
 const patchProduct = async (id, rating) => {
   try {

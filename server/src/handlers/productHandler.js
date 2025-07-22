@@ -107,6 +107,7 @@ const postProductHandler = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
 // Modifiacion completa de producto
 const putProductHandler = async (req, res) => {
   const { id } = req.params;
@@ -140,6 +141,7 @@ const putProductHandler = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
 // Modifiacion parcial de producto
 const patchProductHandler = async (req, res) => {
   const { id } = req.params;

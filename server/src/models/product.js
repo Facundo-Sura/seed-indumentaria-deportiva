@@ -62,14 +62,10 @@ module.exports = (sequelize) => {
       defaultValue: 0,
     },
     rating: {
-      type: DataTypes.ARRAY(DataTypes.FLOAT),
-      defaultValue: [],
+      type: DataTypes.FLOAT,
       validate: {
-        isValidRating(value) {
-          if (value.some((rating) => rating < 0 || rating > 5)) {
-            throw new Error("Todos los ratings deben estar entre 0 y 5");
-          }
-        },
+        min: 0, // Valor mínimo de rating
+        max: 5, // Valor máximo de rating
       },
     },
   });

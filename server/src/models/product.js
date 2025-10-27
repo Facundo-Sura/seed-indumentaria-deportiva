@@ -1,72 +1,49 @@
-const { DataTypes } = require("sequelize");
-module.exports = (sequelize) => {
-  sequelize.define("Product", {
-    id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
-      primaryKey: true,
-      allowNull: false,
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    price: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
-    image: {
-      type: DataTypes.ARRAY(DataTypes.STRING), // Para múltiples imágenes
-      allowNull: false,
-    },
-    category: {
-      type: DataTypes.STRING, // Ej: "camisetas", "pantalones", "vestidos"
-      allowNull: false,
-    },
-    gender: {
-      type: DataTypes.ARRAY(DataTypes.STRING), // Género al que va dirigido
-      allowNull: false,
-    },
-    size: {
-      type: DataTypes.ARRAY(DataTypes.STRING), // Ej: ["S", "M", "L"]
-      allowNull: false,
-    },
-    color: {
-      type: DataTypes.ARRAY(DataTypes.STRING), // Ej: ["rojo", "azul", "negro"]
-      allowNull: false,
-    },
-    stock: {
-      type: DataTypes.INTEGER, // Cantidad disponible
-      allowNull: false,
-    },
-    brand: {
-      type: DataTypes.STRING, // Marca del producto
-      allowNull: false,
-    },
-    material: {
-      type: DataTypes.STRING, // Ej: "algodón", "poliéster"
-      allowNull: true, // Opcional
-    },
-    isOnSale: {
-      type: DataTypes.BOOLEAN, // ¿Está en oferta?
-      allowNull: true,
-      defaultValue: false,
-    },
-    discountPercentage: {
-      type: DataTypes.INTEGER, // Porcentaje de descuento (ej: 20)
-      allowNull: true, // Opciona
-      defaultValue: 0,
-    },
-    rating: {
-      type: DataTypes.FLOAT,
-      validate: {
-        min: 0, // Valor mínimo de rating
-        max: 5, // Valor máximo de rating
-      },
-    },
-  });
+const { supabase } = require('../db');
+
+const Product = {
+  // Solo métodos básicos - la lógica compleja va en el controller
+  async insert(productData) {
+    const { data, error } = await supabase
+      .from('products')
+      .insert([productData])
+      .select()
+      .single();
+    return { data, error };
+  },
+
+  async selectAll() {
+    const { data, error } = await supabase
+      .from('products')
+      .select('*')
+    return { data, error };
+  },
+
+  async selectByBarcode(codigoDeBarras) {
+    const { data, error } = await supabase
+      .from('products')
+      .select('*')
+      .eq('codigoDeBarras', codigoDeBarras)
+      .single();
+    return { data, error };
+  },
+
+  async update(codigoDeBarras, updateData) {
+    const { data, error } = await supabase
+      .from('products')
+      .update(updateData)
+      .eq('codigoDeBarras', codigoDeBarras)
+      .select()
+      .single();
+    return { data, error };
+  },
+
+  async delete(codigoDeBarras) {
+    const { error } = await supabase
+      .from('products')
+      .delete()
+      .eq('codigoDeBarras', codigoDeBarras);
+    return { error };
+  }
 };
+
+module.exports = Product;

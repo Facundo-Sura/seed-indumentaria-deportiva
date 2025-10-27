@@ -1,40 +1,16 @@
-require("dotenv").config();
-const app = require("./src/app");
-const { conn } = require("./src/db");
+require('dotenv').config();
+const { PORT } = process.env;
+const server = require('./src/app');
+const { testConnection } = require('./src/db');
 
-const PORT = process.env.PORT || 5000;
-
-// Ejecuta la inicialización solo si se pasa el argumento --initialize
-  const server = app.listen(PORT, () => {
-    conn.sync({ force: false }); // No usar force en producción
-    console.log(`Server is running on port ${PORT}`);
+// Iniciar servidor independientemente de la conexión a DB
+testConnection().then((connected) => {
+  server.listen(PORT, () => {
+    console.log(`Servidor escuchando http://localhost:${PORT}`);
+    if (!connected) {
+      console.log('⚠️  Advertencia: Conexión a BD no verificada, pero servidor iniciado');
+    }
   });
-
-//manejo de errores del servidor
-server.on("error", (error) => {
-  if (error.syscall !== "listen") {
-    throw error;
-  }
-
-  switch (error.code) {
-    case "EACCES":
-      console.error(`Port ${PORT} requires elevated privileges`);
-      process.exit(1);
-      break;
-    case "EADDRINUSE":
-      console.error(`Port ${PORT} is already in use`);
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
-});
-
-//apagado elegante
-process.on("SIGTERM", () => {
-  console.log("SIGTERM signal received: closing HTTP server");
-  server.close(() => {
-    console.log("HTTP server closed");
-    process.exit(0);
-  });
+}).catch((error) => {
+  console.log('Error:', error);
 });

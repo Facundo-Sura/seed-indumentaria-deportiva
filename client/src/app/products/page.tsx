@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Cards from "@/components/Cards";
 import Pagination from "@/components/Pagination";
+import { useSearchParams } from 'next/navigation';
 
 interface Product {
     id: string;
@@ -11,26 +12,32 @@ interface Product {
     image: string;
 }
 
-const Basquetball: React.FC = () => {
+const Products: React.FC = () => {
     const [products, setProducts] = useState<any[]>([]);
     const [initialLoad, setInitialLoad] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
     const [productsPerPage] = useState(9);
+    const searchParams = useSearchParams();
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/products/filter?category=basket');
+                const searchName = searchParams.get('name');
+                const url = searchName 
+                    ? `http://localhost:8000/products/?name=${encodeURIComponent(searchName)}`
+                    : 'http://localhost:8000/products';
+                    
+                const response = await axios.get(url);
                 setProducts(response.data);
             } catch (error) {
-                console.error('Error fetching products: ', error);
+                console.error('Error loading products:', error);
             } finally {
                 setInitialLoad(false);
             }
         };
 
-        fetchProducts()
-    }, [])
+        fetchProducts();
+    }, [searchParams]);
 
     if (initialLoad) return <div className="flex justify-center items-center h-screen">Cargando productos...</div>;
 
@@ -51,4 +58,4 @@ const Basquetball: React.FC = () => {
     )
 }
 
-export default Basquetball;
+export default Products;
